@@ -16,10 +16,10 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "JOSE FORMIGA"
+title                    : "Jose Formiga"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "JOSE FORMIGA"
+name                     : "Jose Formiga"
 description              : "Data Science Portfolio"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -107,27 +107,27 @@ analytics:
 
 # Site Author
 author:
-  name             : "JOSE FORMIGA"
+  name             : "Jose Formiga"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Data Science Portfolio"
-  location         : "Dublin, Ireland"
+  location         : "Dublin,Ireland"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       # url: mailto:your.name@email.com
-    - label: "linkedin.com/in/jformiga"
-      icon: "fas fa-fw fa-liikedin"
-      # url: "https://linkedin.com/"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      # url: "https://your-website.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
-    - label: "zecakpm"
+    - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/zecakpm/zecakpm.github.io"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -294,10 +294,10 @@ defaults:
       share: true
       related: true
 
-# Pages
-- scope:
-  path: ""
-  type: pages
-values:
-  layout: single
-  author_profile: true
+      # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
