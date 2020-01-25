@@ -110,7 +110,7 @@ author:
   name             : "JOSE FORMIGA"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Data Science Portfolio"
-  location         : "Dublin - Ireland"
+  location         : "Dublin, Ireland"
   email            :
   links:
     - label: "Email"
