@@ -108,7 +108,7 @@ analytics:
 # Site Author
 author:
   name             : "Jose Formiga"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/images/profile.jpg"
   bio              : "Data Science Portfolio"
   location         : "Dublin, Ireland"
   email            :
