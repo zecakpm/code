@@ -3,7 +3,7 @@ title: "Short period classification of The New York Stock Exchange, Nasdaq Stock
 date: 2020-02-18
 tags: [machine learning, data science, neural network]
 header:
-  image "/images/stock_classification/stock_market.jpg"
+  image: "/images/stock_classification/stock_market.jpg"
 excerpt: "Machine Learning,Stock, Data Science"
 ---
 
