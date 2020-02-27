@@ -2,7 +2,7 @@
 title: "About"
 permalink: /about/
 header:
-  image: ""
+  image: "/images/dublin.jpg"
 
 ---
 I'm a data analyst enjoys machine learning and exploratory analysis.
