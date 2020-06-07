@@ -56,12 +56,12 @@ print(resultDataSet)
 
 ## Calculate indicators
 
-       * RSI indicator
-       * Exponential Moving Average Indicator
-       * Difference in Exponential Moving Average
-       * MACD Indicator
-       * Bollinger Band indicator
-       * % Change BB
+   * RSI indicator
+   * Exponential Moving Average Indicator
+   * Difference in Exponential Moving Average
+   * MACD Indicator
+   * Bollinger Band indicator
+   * % Change BB
  
     
 ```r
