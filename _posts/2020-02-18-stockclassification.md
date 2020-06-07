@@ -10,17 +10,18 @@ excerpt: "Machine Learning,Stock, Data Science"
 # STOCK MARKET
 
 Stock market prediction is a challenge for investors and advisers.
-The analysis of more data can be achieved using APIs and classification models allowing investors to use a wide range 
-of data that could lead to better asset allocation. 
+The analysis of longer time series can be achieved using APIs and classification models allowing investors to use a wide range 
+of information that could lead to better asset allocation. 
 
-# MODEL
+# Model
 
-To reduce risk variability we propose a model that runs with Random Forest for a short period classification.
+    To reduce risk exposure we propose a short period classification using the Random Forest model.
 
 # Structure
-1.	Choose Markets & Companies
 
-    Selecting companies from NYSE, Nasdaq, and LSE.
+1 .	Choose Markets & Companies
+
+    Select major companies from NYSE, Nasdaq, and LSE.
 2.	Collect data
 
     Use yahoo API to gather company data.
@@ -54,18 +55,19 @@ print(resultDataSet)
 ``` 
 
 3.	Calculate indicators
-    RSI indicator
-    Exponential Moving Average Indicator
-    Difference in Exponential Moving Average
-    MACD Indicator
-    Bollinger Band indicator
-    % Change BB
+
+       * RSI indicator
+       * Exponential Moving Average Indicator
+       * Difference in Exponential Moving Average
+       * MACD Indicator
+       * Bollinger Band indicator
+       * % Change BB
  
     
 ```r
 for(st in stocks){
   tryCatch({
-    #TryCatch is a function to handle errors
+    
     dataset = na.omit(frames[[index]])
     dataset = dataset[complete.cases(dataset), ]
     
@@ -109,13 +111,14 @@ for(st in stocks){
     
     dataset1 = na.omit(dataset1)
     
-    #Checking for missing data again
+    
     dim(dataset1)
     d3=dataset1
 ```
 
 4.	Split data
-    Slit the data using 80% to train the model, and the remaining 20% to test the model.
+
+    Split data ratio, 80% for training and 20% to validate the model.
 
 ```r
 #Assigining col names
@@ -168,8 +171,8 @@ for(st in stocks){
 
 # Findings
 
-Model accuracy was 0.603 for the companies listed on NYSE, Nasdaq and LSE.
-One more tool to help investor to allocate better their investments.  
+    This represents that the model was able to predict the market direction on 63% of the cases. The result makes it an extra tool for trade strategies.
+ 
 
 
 
