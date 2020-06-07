@@ -15,16 +15,16 @@ of information that could lead to better asset allocation.
 
 # Model
 
-    To reduce risk exposure we propose a short period classification using the Random Forest model.
+   To reduce risk exposure we propose a short period classification using the Random Forest model.
 
 # Structure
 
 1 .	Choose Markets & Companies
 
-    Select major companies from NYSE, Nasdaq, and LSE.
+   Select major companies from NYSE, Nasdaq, and LSE.
 2.	Collect data
 
-    Use yahoo API to gather company data.
+   Use yahoo API to gather company data.
 
 
 ```r
@@ -118,7 +118,7 @@ for(st in stocks){
 
 4.	Split data
 
-    Split data ratio, 80% for training and 20% to validate the model.
+   Split data ratio, 80% for training and 20% to validate the model.
 
 ```r
 #Assigining col names
@@ -170,8 +170,7 @@ for(st in stocks){
 ```
 
 # Findings
-
-    This represents that the model was able to predict the market direction on 63% of the cases. The result makes it an extra tool for trade strategies.
+   This represents that the model was able to predict the market direction on 63% of the cases. The result makes it an extra tool for trade strategies.
  
 
 
