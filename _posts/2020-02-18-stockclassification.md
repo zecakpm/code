@@ -19,10 +19,10 @@ of information that could lead to better asset allocation.
 
 # Structure
 
-1 .	Choose Markets & Companies
+## Choose Markets & Companies
 
    Select major companies from NYSE, Nasdaq, and LSE.
-2.	Collect data
+## Collect data
 
    Use yahoo API to gather company data.
 
@@ -54,7 +54,7 @@ resultDataSet <- data.frame(stocks=character(), Accuracy=double())
 print(resultDataSet)
 ``` 
 
-3.	Calculate indicators
+## Calculate indicators
 
        * RSI indicator
        * Exponential Moving Average Indicator
@@ -116,7 +116,7 @@ for(st in stocks){
     d3=dataset1
 ```
 
-4.	Split data
+## Split data
 
    Split data ratio, 80% for training and 20% to validate the model.
 
@@ -140,7 +140,7 @@ for(st in stocks){
     
 ```
 
-5.	Implement the model
+## Implement the model
 
 
 ```r
@@ -153,7 +153,7 @@ for(st in stocks){
     predict_val = predict(classifier, newdata = test_set[-5])
 ```
 
-6.	Calculate accuracy
+## Calculate accuracy
 
 ```r
 # Confusion Matrix
