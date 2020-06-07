@@ -9,8 +9,8 @@ excerpt: "Machine Learning,Stock, Data Science"
 
 # STOCK MARKET
 
-Stock market prediction of price fluctuation is a challenge for investors and advisers.
-The analysis of more data can be achieved using APIs and classification models, this allows investors to use a wide range 
+Stock market prediction is a challenge for investors and advisers.
+The analysis of more data can be achieved using APIs and classification models allowing investors to use a wide range 
 of data that could lead to better asset allocation. 
 
 # MODEL
@@ -19,9 +19,13 @@ To reduce risk variability we propose a model that runs with Random Forest for a
 
 # Structure
 1.	Choose Markets & Companies
+
     Selecting companies from NYSE, Nasdaq, and LSE.
 2.	Collect data
+
     Use yahoo API to gather company data.
+
+
 ```r
 library(quantmod)
 library(randomForest)
@@ -56,6 +60,8 @@ print(resultDataSet)
     MACD Indicator
     Bollinger Band indicator
     % Change BB
+ 
+    
 ```r
 for(st in stocks){
   tryCatch({
@@ -107,8 +113,10 @@ for(st in stocks){
     dim(dataset1)
     d3=dataset1
 ```
+
 4.	Split data
     Slit the data using 80% to train the model, and the remaining 20% to test the model.
+
 ```r
 #Assigining col names
     colnames(dataset1)= c ("RSI20", "EMA20", "MACDsignal", "BB", "Price")
@@ -128,7 +136,10 @@ for(st in stocks){
     test_set[-5] = scale(test_set[-5])
     
 ```
+
 5.	Implement the model
+
+
 ```r
 # Applying Random Forest Model on the Training set
     classifier = randomForest(x = training_set[-5],
@@ -137,9 +148,10 @@ for(st in stocks){
     
     # Predicting the Test set results
     predict_val = predict(classifier, newdata = test_set[-5])
-    
 ```
+
 6.	Calculate accuracy
+
 ```r
 # Confusion Matrix
     confMat = table(test_set[, 5], predict_val)
