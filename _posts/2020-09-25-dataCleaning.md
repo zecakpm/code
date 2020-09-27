@@ -7,11 +7,104 @@ header:
 excerpt: "Data Cleaning, Machine Learning, Data Science"
 ---
 
-# STOCK MARKET
 
-Stock market prediction is a challenge for investors and advisers.
-The analysis of longer time series can be achieved using APIs and classification models allowing investors to use a wide range 
-of information that could lead to better asset allocation. 
+
+# Clean web log access 
+Main aim of this task is to view the top pages of a certain web page.
+How a easy task turns into a laborious activy. 
+This log data was released on the Udemy Course called "Machine Learning, Data Science and Deep Learning with Python" by Frank Keane.
+
+To download the data check out this link.
+
+
+
+Lets start!!!
+
+
+#Organizing web logs into fields
+
+This code will parse an apache access log line in a bunch of fields, and then buids up what is called the regular expression.
+This will allows us to appy it to each access log line, and group the pieces of data in these different fields
+
+``` python
+import re
+
+format_pat= re.compile(
+    r"(?P<host>[\d\.]+)\s"
+    r"(?P<identity>\S*)\s"
+    r"(?P<user>\S*)\s"
+    r"\[(?P<time>.*?)\]\s"
+    r'"(?P<request>.*?)"\s'
+    r"(?P<status>\d+)\s"
+    r"(?P<bytes>\S*)\s"
+    r'"(?P<referer>.*?)"\s'
+    r'"(?P<user_agent>.*?)"\s*'
+)
+
+df = "access_log.txt"
+
+```
+
+``` python
+#Create a dict
+URLCounts = {}
+
+#open the log file
+with open(logPath, "r") as f:
+    #for each line apply the regular expression
+    for line in (l.rstrip() for l in f):
+        #if return a successful match for the pattern we are looking for
+        match= format_pat.match(line)
+        if match:
+            access = match.groupdict()
+            #extract the request field
+            request = access['request']
+            #split request on its 3 components 
+            (action, URL, protocol) = request.split()
+            #if URL is in the dict, add 1, else create a new dict value for the new URL
+            if URL in URLCounts:
+                URLCounts[URL] = URLCounts[URL] + 1
+            else:
+                URLCounts[URL] = 1
+
+# sort the results 
+results = sorted(URLCounts, key=lambda i: int(URLCounts[i]), reverse=True)
+
+#printing the first 20 results
+for result in results[:20]:
+    print(result + ": " + str(URLCounts[result]))
+```
+
+
+```Python
+#Create a dict
+URLCounts = {}
+
+#open the log file
+with open(logPath, "r") as f:
+    #for each line apply the regular expression
+    for line in (l.rstrip() for l in f):
+        #if return a successful match for the pattern we are looking for
+        match= format_pat.match(line)
+        if match:
+            access = match.groupdict()
+            #extract the request field
+            request = access['request']
+            #split request on its 3 components 
+            (action, URL, protocol) = request.split()
+            #if URL is in the dict, add 1, else create a new dict value for the new URL
+            if URL in URLCounts:
+                URLCounts[URL] = URLCounts[URL] + 1
+            else:
+                URLCounts[URL] = 1
+
+# sort the results 
+results = sorted(URLCounts, key=lambda i: int(URLCounts[i]), reverse=True)
+
+#printing the first 20 results
+for result in results[:20]:
+    print(result + ": " + str(URLCounts[result]))
+```
 
 # Model
 
