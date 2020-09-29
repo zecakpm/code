@@ -81,7 +81,65 @@ for result in results[:20]:
 * If the URL is present on the dictionary, add to it, if not create a dictionary value.
 * Sort results
 
+
 <img src="{{ site.url }}{{ site.baseurl }}/images/data_cleaning/1.jpg" alt="linearly separable data">
+
+Our first road block is that not all fields have the 3 components that we are looking for.
+So lets check what does not have 3 components.
+
+``` python
+URLCounts = {}
+
+with open(data, "r") as f:
+    for line in (l.rstrip() for l in f):
+        match= format_pat.match(line)
+        if match:
+            access = match.groupdict()
+            request = access['request']
+            fields = request.split()
+            if (len(fields) != 3):
+                print(fields)
+
+```
+
+<img src="{{ site.url }}{{ site.baseurl }}/images/data_cleaning/2.jpg" alt="linearly separable data">
+
+Lets update our code to select only fields with 3 components.
+
+``` python
+URLCounts = {}
+
+with open(data, "r") as f:
+    for line in (l.rstrip() for l in f):
+        match= format_pat.match(line)
+        if match:
+            access = match.groupdict()
+            request = access['request']
+            fields = request.split()
+            #code added to remove blanks and any other field with len different than 3
+            if (len(fields) == 3):
+                URL = fields[1]
+                if URL in URLCounts:
+                    URLCounts[URL] = URLCounts[URL] + 1
+                else:
+                    URLCounts[URL] = 1
+
+results = sorted(URLCounts, key=lambda i: int(URLCounts[i]), reverse=True)
+
+for result in results[:20]:
+    print(result + ": " + str(URLCounts[result]))
+
+```
+
+<img src="{{ site.url }}{{ site.baseurl }}/images/data_cleaning/3.jpg" alt="linearly separable data">
+
+The results were narrowed down, few results do not the actual posts we are looking for.
+To filter a bit more the results lets set action = "GET".
+
+<img src="{{ site.url }}{{ site.baseurl }}/images/data_cleaning/4.jpg" alt="linearly separable data">
+<img src="{{ site.url }}{{ site.baseurl }}/images/data_cleaning/5.jpg" alt="linearly separable data">
+<img src="{{ site.url }}{{ site.baseurl }}/images/data_cleaning/6.jpg" alt="linearly separable data">
+<img src="{{ site.url }}{{ site.baseurl }}/images/data_cleaning/7.jpg" alt="linearly separable data">
 
 
 
