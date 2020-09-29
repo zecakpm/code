@@ -9,7 +9,7 @@ excerpt: "Data Cleaning, Machine Learning, Data Science"
 
 
 
-# Clean web log access 
+## Clean web log access 
 Main aim of this task is to view the top pages of a certain web page.
 How a easy task turns into a laborious activy. 
 This log data was released on the Udemy Course called "Machine Learning, Data Science and Deep Learning with Python" by Frank Keane.
@@ -21,7 +21,7 @@ To download the data check out this link.
 Lets start!!!
 
 
-#Organizing web logs into fields
+## Organizing web logs into fields
 
 This code will parse an apache access log line in a bunch of fields, and then buids up what is called the regular expression.
 This will allows us to appy it to each access log line, and group the pieces of data in these different fields
@@ -46,14 +46,11 @@ df = "access_log.txt"
 ```
 
 ``` python
-#Create a dict
 URLCounts = {}
 
 #open the log file
-with open(logPath, "r") as f:
-    #for each line apply the regular expression
+with open(data, "r") as f:
     for line in (l.rstrip() for l in f):
-        #if return a successful match for the pattern we are looking for
         match= format_pat.match(line)
         if match:
             access = match.groupdict()
@@ -75,36 +72,19 @@ for result in results[:20]:
     print(result + ": " + str(URLCounts[result]))
 ```
 
+## Code step by step
+* Create a dictionaty
+* For each line apply the regular expression
+* If statement meets a standard pattern
+* Extract a request field
+* Split request into 3 components (action,URL, protocol)
+* If the URL is present on the dictionary, add to it, if not create a dictionary value.
+* Sort results
 
-```Python
-#Create a dict
-URLCounts = {}
+<img src="{{ site.url }}{{ site.baseurl }}/images/data_cleaning/1.jpg" alt="linearly separable data">
 
-#open the log file
-with open(logPath, "r") as f:
-    #for each line apply the regular expression
-    for line in (l.rstrip() for l in f):
-        #if return a successful match for the pattern we are looking for
-        match= format_pat.match(line)
-        if match:
-            access = match.groupdict()
-            #extract the request field
-            request = access['request']
-            #split request on its 3 components 
-            (action, URL, protocol) = request.split()
-            #if URL is in the dict, add 1, else create a new dict value for the new URL
-            if URL in URLCounts:
-                URLCounts[URL] = URLCounts[URL] + 1
-            else:
-                URLCounts[URL] = 1
 
-# sort the results 
-results = sorted(URLCounts, key=lambda i: int(URLCounts[i]), reverse=True)
 
-#printing the first 20 results
-for result in results[:20]:
-    print(result + ": " + str(URLCounts[result]))
-```
 
 # Model
 
