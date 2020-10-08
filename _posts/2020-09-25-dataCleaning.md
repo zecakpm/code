@@ -45,20 +45,25 @@ df = "access_log.txt"
 
 ```
 
+## Code step by step
+* Create a dictionaty
+* For each line apply the regular expression
+* If statement meets a standard pattern (3 components --> action,URL, protocol)
+* Extract a request field
+* Split request into 3 components (action,URL, protocol)
+* If the URL is present on the dictionary, add to it, if not create a dictionary value.
+* Sort results
+
 ``` python
 URLCounts = {}
 
-#open the log file
 with open(data, "r") as f:
     for line in (l.rstrip() for l in f):
         match= format_pat.match(line)
         if match:
             access = match.groupdict()
-            #extract the request field
             request = access['request']
-            #split request on its 3 components 
             (action, URL, protocol) = request.split()
-            #if URL is in the dict, add 1, else create a new dict value for the new URL
             if URL in URLCounts:
                 URLCounts[URL] = URLCounts[URL] + 1
             else:
@@ -71,16 +76,6 @@ results = sorted(URLCounts, key=lambda i: int(URLCounts[i]), reverse=True)
 for result in results[:20]:
     print(result + ": " + str(URLCounts[result]))
 ```
-
-## Code step by step
-* Create a dictionaty
-* For each line apply the regular expression
-* If statement meets a standard pattern (3 components --> action,URL, protocol)
-* Extract a request field
-* Split request into 3 components (action,URL, protocol)
-* If the URL is present on the dictionary, add to it, if not create a dictionary value.
-* Sort results
-
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/data_cleaning/1.jpg" alt="linearly separable data">
 
@@ -137,12 +132,38 @@ The results were narrowed down, but we are not quite there yet.
 To restrict it a bit more lets set action = "GET".
 This means that users "getting" info from the website.
 
+``` python
+URLCounts = {}
+
+with open(logPath, "r") as f:
+    for line in (l.rstrip() for l in f):
+        match= format_pat.match(line)
+        if match:
+            access = match.groupdict()
+            request = access['request']
+            fields = request.split()
+            if (len(fields) == 3):
+                (action, URL, protocol) = fields
+                if (action == 'GET'):
+                    if URL in URLCounts:
+                        URLCounts[URL] = URLCounts[URL] + 1
+                    else:
+                        URLCounts[URL] = 1
+
+results = sorted(URLCounts, key=lambda i: int(URLCounts[i]), reverse=True)
+
+for result in results[:20]:
+    print(result + ": " + str(URLCounts[result]))
+```
+
 <img src="{{ site.url }}{{ site.baseurl }}/images/data_cleaning/4.jpg" alt="linearly separable data">
 
 Digging deeper on the results is possible to find "blank" user agents, meaning that those requests are coming from 
 not regular users, or any type of web scrappers.
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/data_cleaning/5.jpg" alt="linearly separable data">
+* selecting most used agent ="browser"
+* check the second result, "-: 4035", could be a scrapping tool
+* baiduspider, googlebot and yandexbot are webcrawlers
 
 ``` python
 
@@ -166,11 +187,77 @@ for result in results:
 
 ```
 
-* selecting most used agent ="browser"
-* check the second result, "-: 4035", could be a scrapping tool
-* baiduspider, googlebot and yandexbot are webcrawlers
+<img src="{{ site.url }}{{ site.baseurl }}/images/data_cleaning/5.jpg" alt="linearly separable data">
+
+There still agents that do not look right, so lets add few more filters. Lets remove agents that have the following
+bots,Bots,spider,Spider, and "-".  
+
+``` python
+
+URLCounts = {}
+
+with open(logPath, "r") as f:
+    for line in (l.rstrip() for l in f):
+        match= format_pat.match(line)
+        if match:
+            access = match.groupdict()
+            #restricting the user agent that does not have the following words
+            #W3 total cache is the website owner cache 
+            agent = access['user_agent']
+            if (not('bot' in agent or 'spider' in agent or 
+                    'Bot' in agent or 'Spider' in agent or
+                    'W3 Total Cache' in agent or agent =='-')):
+                request = access['request']
+                fields = request.split()
+                if (len(fields) == 3):
+                    (action, URL, protocol) = fields
+                    if (action == 'GET'):
+                        if URL in URLCounts:
+                            URLCounts[URL] = URLCounts[URL] + 1
+                        else:
+                            URLCounts[URL] = 1
+
+results = sorted(URLCounts, key=lambda i: int(URLCounts[i]), reverse=True)
+
+for result in results[:20]:
+    print(result + ": " + str(URLCounts[result]))
+
+```
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/data_cleaning/6.jpg" alt="linearly separable data">
+
+Almost there, finally the last approach. So the next action is to filter only for URLs endind in "/".
+
+``` python
+URLCounts = {}
+
+with open(logPath, "r") as f:
+    for line in (l.rstrip() for l in f):
+        match= format_pat.match(line)
+        if match:
+            access = match.groupdict()
+            agent = access['user_agent']
+            if (not('bot' in agent or 'spider' in agent or 
+                    'Bot' in agent or 'Spider' in agent or
+                    'W3 Total Cache' in agent or agent =='-')):
+                request = access['request']
+                fields = request.split()
+                if (len(fields) == 3):
+                    (action, URL, protocol) = fields
+                    if (URL.endswith("/")):
+                        if (action == 'GET'):
+                            if URL in URLCounts:
+                                URLCounts[URL] = URLCounts[URL] + 1
+                            else:
+                                URLCounts[URL] = 1
+
+results = sorted(URLCounts, key=lambda i: int(URLCounts[i]), reverse=True)
+
+for result in results[:20]:
+    print(result + ": " + str(URLCounts[result]))
+
+```
+
 <img src="{{ site.url }}{{ site.baseurl }}/images/data_cleaning/7.jpg" alt="linearly separable data">
 
 
