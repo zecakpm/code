@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+<!-- start : Framework/Redwood2 -->
+	<!-- start : ocom/common/global/components/framework/head -->
+<head>
+	<!-- start : ocom/common/global/components/head -->
+		<title>Data Science | Oracle</title>
+		<meta name="Title" content="Data Science | Oracle">
+	
+			<meta name="Description" content="Data science makes data science teams more productive, decreasing time to value, and ultimately creating a more robust business, powered by machine learning.">
+		
+	<meta name="Keywords" content="data science, data science cloud, big data, data science platform, big data analytics platform">
+	
+	<meta name="siteid" content="us">
+	<meta name="countryid" content="US">
+	<meta name="robots" content="index, follow">
+	<meta name="country" content="United States">
+	<meta name="Language" content="en">
+	<meta name="Updated Date" content="2020-03-10T20:34:49Z">
+	
+	<script>
+// akam-sw.js install script version 1.3.3
+"serviceWorker"in navigator&&"find"in[]&&function(){var e=new Promise(function(e){"complete"===document.readyState||!1?e():(window.addEventListener("load",function(){e()}),setTimeout(function(){"complete"!==document.readyState&&e()},1e4))}),n=window.akamServiceWorkerInvoked,r="1.3.3";if(n)aka3pmLog("akam-setup already invoked");else{window.akamServiceWorkerInvoked=!0,window.aka3pmLog=function(){window.akamServiceWorkerDebug&&console.log.apply(console,arguments)};function o(e){(window.BOOMR_mq=window.BOOMR_mq||[]).push(["addVar",{"sm.sw.s":e,"sm.sw.v":r}])}var i="/akam-sw.js",a=new Map;navigator.serviceWorker.addEventListener("message",function(e){var n,r,o=e.data;if(o.isAka3pm)if(o.command){var i=(n=o.command,(r=a.get(n))&&r.length>0?r.shift():null);i&&i(e.data.response)}else if(o.commandToClient)switch(o.commandToClient){case"enableDebug":window.akamServiceWorkerDebug||(window.akamServiceWorkerDebug=!0,aka3pmLog("Setup script debug enabled via service worker message"),p());break;case"boomerangMQ":o.payload&&(window.BOOMR_mq=window.BOOMR_mq||[]).push(o.payload)}aka3pmLog("akam-sw message: "+JSON.stringify(e.data))});var t=function(e){return new Promise(function(n){var r,o;r=e.command,o=n,a.has(r)||a.set(r,[]),a.get(r).push(o),navigator.serviceWorker.controller&&(e.isAka3pm=!0,navigator.serviceWorker.controller.postMessage(e))})},c=function(e){return t({command:"navTiming",navTiming:e})},s=null,m={},d=function(){var e=i;return s&&(e+="?othersw="+encodeURIComponent(s)),function(e,n){return new Promise(function(r,i){aka3pmLog("Registering service worker with URL: "+e),navigator.serviceWorker.register(e,n).then(function(e){aka3pmLog("ServiceWorker registration successful with scope: ",e.scope),r(e),o(1)}).catch(function(e){aka3pmLog("ServiceWorker registration failed: ",e),o(0),i(e)})})}(e,m)},g=ServiceWorkerContainer.prototype.register;if(ServiceWorkerContainer.prototype.register=function(n,r){return n.includes(i)?g.call(this,n,r):(aka3pmLog("Overriding registration of service worker for: "+n),s=new URL(n,window.location.href),m=r,navigator.serviceWorker.controller?new Promise(function(n,r){var o=navigator.serviceWorker.controller.scriptURL;if(o.includes(i)){var a=encodeURIComponent(s);o.includes(a)?(aka3pmLog("Cancelling registration as we already integrate other SW: "+s),navigator.serviceWorker.getRegistration().then(function(e){n(e)})):e.then(function(){aka3pmLog("Unregistering existing 3pm service worker"),navigator.serviceWorker.getRegistration().then(function(e){e.unregister().then(function(){return d()}).then(function(e){n(e)}).catch(function(e){r(e)})})})}else aka3pmLog("Cancelling registration as we already have akam-sw.js installed"),navigator.serviceWorker.getRegistration().then(function(e){n(e)})}):g.call(this,n,r))},navigator.serviceWorker.controller){var u=navigator.serviceWorker.controller.scriptURL;u.includes("/akam-sw.js")||u.includes("/akam-sw-preprod.js")||u.includes("/threepm-sw.js")||(aka3pmLog("Detected existing service worker. Removing and re-adding inside akam-sw.js"),s=new URL(u,window.location.href),e.then(function(){navigator.serviceWorker.getRegistration().then(function(e){m={scope:e.scope},e.unregister(),d()})}))}else e.then(function(){window.akamServiceWorkerPreprod&&(i="/akam-sw-preprod.js"),d()});if(window.performance){var w=window.performance.timing,l=w.responseEnd-w.responseStart;c(l)}e.then(function(){t({command:"pageLoad"})});var k=!1;function p(){window.akamServiceWorkerDebug&&!k&&(k=!0,aka3pmLog("Initializing debug functions at window scope"),window.aka3pmInjectSwPolicy=function(e){return t({command:"updatePolicy",policy:e})},window.aka3pmDisableInjectedPolicy=function(){return t({command:"disableInjectedPolicy"})},window.aka3pmDeleteInjectedPolicy=function(){return t({command:"deleteInjectedPolicy"})},window.aka3pmGetStateAsync=function(){return t({command:"getState"})},window.aka3pmDumpState=function(){aka3pmGetStateAsync().then(function(e){aka3pmLog(JSON.stringify(e,null,"\t"))})},window.aka3pmInjectTiming=function(e){return c(e)},window.aka3pmUpdatePolicyFromNetwork=function(){return t({command:"pullPolicyFromNetwork"})})}p()}}();</script>
+<script type="text/javascript">
+		var pageData = pageData || {};
+		//page info
+		pageData.pageInfo = pageData.pageInfo || {};
+		pageData.pageInfo.language = "en";
+		pageData.pageInfo.country = "United States";
+		pageData.pageInfo.pageTitle = "Data Science | Oracle";
+		pageData.pageInfo.description = "Data science makes data science teams more productive, decreasing time to value, and ultimately creating a more robust business, powered by machine learning.";
+		pageData.pageInfo.keywords = "data science, data science cloud, big data, data science platform, big data analytics platform";
+		pageData.pageInfo.siteId = "us";
+		pageData.pageInfo.countryId = "US";
+		pageData.pageInfo.updatedDate = "2020-03-10T20:34:49Z";
+	</script>
+	<!-- start : ocom/common/global/components/seo-taxonomy-meta-data-->
+	
+	<script type="text/javascript">
+		var pageData = pageData || {};
+		//taxonmy
+		pageData.taxonomy = pageData.taxonomy || {};
+		pageData.taxonomy.productServices = [];
+		pageData.taxonomy.industry = [];
+		pageData.taxonomy.region = [];
+		pageData.taxonomy.contentType = ["WM147085"];
+		pageData.taxonomy.buyersJourney = [];
+		pageData.taxonomy.revenue = [];
+		pageData.taxonomy.title = [];
+		pageData.taxonomy.audience = [];
+		pageData.taxonomy.persona = [];
+	</script>
+<!-- end : ocom/common/global/components/seo-taxonomy-meta-data-->
+<!-- start : ocom/common/global/components/social-media-meta-tags -->
+<!-- end : ocom/common/global/components/social-media-meta-tags -->
+<!-- start : ocom/common/global/components/seo-hreflang-meta-tags --><link rel="canonical" href="https://www.oracle.com/data-science/" />
+					<link rel="alternate" hreflang="en-AE" href="https://www.oracle.com/ae/data-science/" />
+					
+					<link rel="alternate" hreflang="ar-AE" href="https://www.oracle.com/ae-ar/data-science/" />
+					
+					<link rel="alternate" hreflang="es-AR" href="https://www.oracle.com/ar/data-science/" />
+					
+					<link rel="alternate" hreflang="en-AU" href="https://www.oracle.com/au/data-science/" />
+					
+					<link rel="alternate" hreflang="en-BE" href="https://www.oracle.com/be/data-science/" />
+					
+					<link rel="alternate" hreflang="pt-BR" href="https://www.oracle.com/br/data-science/" />
+					
+					<link rel="alternate" hreflang="en-CA" href="https://www.oracle.com/ca-en/data-science/" />
+					
+					<link rel="alternate" hreflang="fr-CA" href="https://www.oracle.com/ca-fr/data-science/" />
+					
+					<link rel="alternate" hreflang="de-CH" href="https://www.oracle.com/ch-de/data-science/" />
+					
+					<link rel="alternate" hreflang="fr-CH" href="https://www.oracle.com/ch-fr/data-science/" />
+					
+					<link rel="alternate" hreflang="es-CL" href="https://www.oracle.com/cl/data-science/" />
+					
+					<link rel="alternate" hreflang="zh-CN" href="https://www.oracle.com/cn/data-science/" />
+					
+					<link rel="alternate" hreflang="es-CO" href="https://www.oracle.com/co/data-science/" />
+					
+					<link rel="alternate" hreflang="cs-CZ" href="https://www.oracle.com/cz/data-science/" />
+					
+					<link rel="alternate" hreflang="de-DE" href="https://www.oracle.com/de/data-science/" />
+					
+					<link rel="alternate" hreflang="en-US" href="https://www.oracle.com/data-science/" />
+					
+					<link rel="alternate" hreflang="es-ES" href="https://www.oracle.com/es/data-science/" />
+					
+					<link rel="alternate" hreflang="fr-FR" href="https://www.oracle.com/fr/data-science/" />
+					
+					<link rel="alternate" hreflang="en-HK" href="https://www.oracle.com/hk/data-science/" />
+					
+					<link rel="alternate" hreflang="en-ID" href="https://www.oracle.com/id/data-science/" />
+					
+					<link rel="alternate" hreflang="en-IE" href="https://www.oracle.com/ie/data-science/" />
+					
+					<link rel="alternate" hreflang="en-IN" href="https://www.oracle.com/in/data-science/" />
+					
+					<link rel="alternate" hreflang="it-IT" href="https://www.oracle.com/it/data-science/" />
+					
+					<link rel="alternate" hreflang="ja-JP" href="https://www.oracle.com/jp/data-science/" />
+					
+					<link rel="alternate" hreflang="ko-KR" href="https://www.oracle.com/kr/data-science/" />
+					
+					<link rel="alternate" hreflang="es-MX" href="https://www.oracle.com/mx/data-science/" />
+					
+					<link rel="alternate" hreflang="nl-NL" href="https://www.oracle.com/nl/data-science/" />
+					
+					<link rel="alternate" hreflang="en-PH" href="https://www.oracle.com/ph/data-science/" />
+					
+					<link rel="alternate" hreflang="pl-PL" href="https://www.oracle.com/pl/data-science/" />
+					
+					<link rel="alternate" hreflang="ro-RO" href="https://www.oracle.com/ro/data-science/" />
+					
+					<link rel="alternate" hreflang="ru-RU" href="https://www.oracle.com/ru/data-science/" />
+					
+					<link rel="alternate" hreflang="en-SA" href="https://www.oracle.com/sa/data-science/" />
+					
+					<link rel="alternate" hreflang="ar-SA" href="https://www.oracle.com/sa-ar/data-science/" />
+					
+					<link rel="alternate" hreflang="sv-SE" href="https://www.oracle.com/se/data-science/" />
+					
+					<link rel="alternate" hreflang="en-SG" href="https://www.oracle.com/sg/data-science/" />
+					
+					<link rel="alternate" hreflang="sk-SK" href="https://www.oracle.com/sk/data-science/" />
+					
+					<link rel="alternate" hreflang="tr-TR" href="https://www.oracle.com/tr/data-science/" />
+					
+					<link rel="alternate" hreflang="zh-TW" href="https://www.oracle.com/tw/data-science/" />
+					
+					<link rel="alternate" hreflang="en-GB" href="https://www.oracle.com/uk/data-science/" />
+					
+					<link rel="alternate" hreflang="en-ZA" href="https://www.oracle.com/za/data-science/" />
+					
+					<meta name="altpages" content="ae,ae-ar,ar,au,be,br,ca-en,ca-fr,ch-de,ch-fr,cl,cn,co,cz,de,es,fr,hk,id,ie,in,it,jp,kr,mx,nl,ph,pl,ro,ru,sa,sa-ar,se,sg,sk,tr,tw,uk,za">
+					<script type="text/javascript">
+						var pageData = pageData || {};
+						//page info
+						pageData.pageInfo = pageData.pageInfo || {};
+						pageData.pageInfo.altPages = "ae,ae-ar,ar,au,be,br,ca-en,ca-fr,ch-de,ch-fr,cl,cn,co,cz,de,es,fr,hk,id,ie,in,it,jp,kr,mx,nl,ph,pl,ro,ru,sa,sa-ar,se,sg,sk,tr,tw,uk,za";
+					</script>
+				<!-- end : ocom/common/global/components/seo-hreflang-meta-tags -->
+
+	<!-- end : ocom/common/global/components/head -->
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+	<!-- start : ocom/common/global/components/framework/layoutAssetHeadInfo -->
+<!-- Container/Display Start -->
+
+<!-- BEGIN: oWidget_C/_Raw-Text/Display -->
+	<!-- BEGIN CSS/JS -->
+	<script>
+		!function(){
+			var d=document.documentElement;d.className=d.className.replace(/no-js/,'js');
+			if(document.location.href.indexOf('betamode=') > -1) document.write('<script src="/asset/web/js/ocom-betamode.js"><\/script>');
+		}();
+	</script>
+
+	<link data-wscss href="/asset/web/css/redwood-base.css" rel="preload" as="style" onload="this.rel='stylesheet';" onerror="this.rel='stylesheet'">
+	<link data-wscss href="/asset/web/css/redwood-styles.css" rel="preload" as="style" onload="this.rel='stylesheet';" onerror="this.rel='stylesheet'">
+
+	<noscript>
+		<link href="/asset/web/css/redwood-base.css" rel="stylesheet">
+		<link href="/asset/web/css/redwood-styles.css" rel="stylesheet">
+	</noscript>
+
+	<link data-wsjs data-reqjq href="/asset/web/js/redwood-base.js" rel="preload" as="script">
+	<link data-wsjs data-reqjq href="/asset/web/js/redwood-lib.js" rel="preload" as="script">
+	<script data-wsjs src="/asset/web/js/jquery-min.js" async onload="$('head link[data-reqjq][rel=preload]').each(function(){var a = document.createElement('script');a.async=false;a.src=$(this).attr('href');this.parentNode.insertBefore(a, this);});$(function(){$('script[data-reqjq][data-src]').each(function(){this.async=true;this.src=$(this).data('src');});});"></script>
+    <!-- END CSS/JS -->		
+
+
+
+<!-- END: oWidget_C/_Raw-Text/Display -->
+
+<!-- Container/Display end -->
+
+<!-- Container/Display Start -->
+
+<!-- BEGIN: oWidget_C/_Raw-Text/Display -->
+ <!-- www-us HeadAdminContainer -->
+<link rel="icon" href="https://www.oracle.com/asset/web/favicons/favicon-32.png" sizes="32x32">
+<link rel="icon" href="https://www.oracle.com/asset/web/favicons/favicon-128.png" sizes="128x128">
+<link rel="icon" href="https://www.oracle.com/asset/web/favicons/favicon-192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://www.oracle.com/asset/web/favicons/favicon-120.png" sizes="120x120">
+<link rel="apple-touch-icon" href="https://www.oracle.com/asset/web/favicons/favicon-152.png" sizes="152x152">
+<link rel="apple-touch-icon" href="https://www.oracle.com/asset/web/favicons/favicon-180.png" sizes="180x180">
+<meta name="msapplication-TileColor" content="#fcfbfa"/>
+<meta name="msapplication-square70x70logo" content="favicon-128.png"/>
+<meta name="msapplication-square150x150logo" content="favicon-270.png"/>
+<meta name="msapplication-TileImage" content="favicon-270.png"/>
+<meta name="msapplication-config" content="none"/>
+  <style>
+  #oReactiveChatContainer1 { display:none;}
+  </style>
+  <!--DTM embed code - Header -->
+  <script src="//assets.adobedtm.com/6f37a0dc9cdbe818dc4979828b58b88e3f060ea4/satelliteLib-e598c5b61e39a10b402e048e87dd27b0f1cd2d4c.js"></script>
+ 
+ <!--End-->
+
+
+
+
+<!-- END: oWidget_C/_Raw-Text/Display -->
+
+<!-- Container/Display end -->
+
+
+<!-- end : ocom/common/global/components/framework/layoutAssetHeadInfo -->
+
+
+
+  <script>(window.BOOMR_mq=window.BOOMR_mq||[]).push(["addVar",{"rua.upush":"false","rua.cpush":"false","rua.upre":"false","rua.cpre":"false","rua.uprl":"false","rua.cprl":"false","rua.cprf":"false","rua.trans":"","rua.cook":"false","rua.ims":"false","rua.ufprl":"false","rua.cfprl":"false"}]);</script>
+  <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="DXNLE-YBWWY-AR74T-WMD99-77VRA",function(){function e(){if(!o){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,i.parentNode.appendChild(e),o=!0}}function t(e){o=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(i.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",i.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(c){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"DXNLE-YBWWY-AR74T-WMD99-77VRA";var i=document.currentScript||document.getElementsByTagName("script")[0],o=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!o)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),i.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="fibibbcomb7qakqce3yaa4ieujpzoinp-f-0f7a28f93-clienttons-s.akamaihd.net",i={"ak.v":"29","ak.cp":"82485","ak.ai":parseInt("604074",10),"ak.ol":"0","ak.cr":23,"ak.ipv":6,"ak.proto":"h2","ak.rid":"804089e","ak.r":31258,"ak.a2":n,"ak.m":"dscx","ak.n":"essl","ak.bpcip":"2a02:8084:4e60:7f00::","ak.cport":65361,"ak.gh":"88.221.222.211","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.csrc":"-","ak.acc":"","ak.t":"1603740079","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==+jz9UvMF1CWT9O59Dzy3dxCh6yE4dfs58pj+jZf2zzP1oDG0g9UBah0K1v6wdRtn4Q5JObXOebFn228k3siWnLGoWykHhNLuZOcv5GgOmrYx+a8aewRH2GCB0RMcnTnCvC6dShgATIo06FtmHGVV1j1fNzZNJ0l6Dyo0YHZoKIIGIo/IootcCN9nmjtaEXvVnAVsaiHPsx07WTWfrYyLSjlhCXhwIpy7+z2yeeZWxRxqGplb62HOB6UBUZSNmmL5tAi9zYAmw9399zIooIfhdBKNeFNHbeGuTu2e3lAdGtYrT+x7XtUi+8H6moIFDRbusCj5Ls8QNxm54P3W4P4ZNYHIXHcbXQc/RqiGznl2T8o3EdkCqshPLYlicOeGvg9oQzx+4MdKtJPVZLcW5zS+wI2Ic3VwyiWB5eiqge7mZIs=","ak.pv":"133","ak.dpoabenc":""};if(""!==t)i["ak.ruds"]=t;var o={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))i["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(i)},rv:function(){var e=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.r","ak.acc","ak.t"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:i,akDNSPreFetchDomain:a,init:function(){if(!o.i){var e=BOOMR.subscribe;e("before_beacon",o.av,null,null),e("onbeacon",o.rv,null,null),o.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script><script>bazadebezolkohpepadr="322108156"</script><script type="text/javascript" src="https://www.oracle.com/akam/11/1332fb46" defer></script></head><!-- end : ocom/common/global/components/framework/head --><!-- start : ocom/common/global/components/redwood/layoutAssetStartBodyInfo -->
+	<body class="f20 f20v0 rwtheme-teal" style="opacity:0">
+
+		
+<!-- Container/Display Start -->
+
+<!-- BEGIN: oWidget_C/_Raw-Text/Display -->
+<!-- www-us StartBodyAdminContainer -->
+
+
+
+<!-- END: oWidget_C/_Raw-Text/Display -->
+
+<!-- Container/Display end -->
+
+
+		<div class="f20w1">
+
+			
+	<!-- Dispatcher:null -->
+	
+<!-- BEGIN: oWidget_C/_Raw-Text/Display -->
+<!-- U28v1 -->
+<section class="u28 u28v1 u28adj" id="u28" data-trackas="header">
+	<div class="u28w1">
+		<div class="cwidth">
+			<div class="u28s1" id="u28s1">
+				<a class="u28home rw-logo" href="/" tabindex="1" data-lbl="logo">home</a>
+				<a class="u28ham" href="/universal-menu/" tabindex="2" data-lbl="menu">nav</a>
+			</div>
+			<div class="u28s2">
+				<div class="u28w2">
+					<form name="askoracle" id="askoracle" class="askoracle" data-contentpaths="/content/Web/Shared/Auto-Suggest Panel Event" method="get" action="/search/results">
+						<input type="hidden" name="Nty" value="1">
+						<input type="hidden" name="Dy" value="1">
+						<input type="hidden" name="Ntk" value="SI-ALL5">
+						<input type="hidden" name="cty" value="us">
+						<input type="hidden" name="lang" value="en">
+						<div class="u28w3">
+							<div class="u28logo rw-logo">
+								<span>Oracle</span>
+							</div>
+							<a class="u28-back rw-cv-left" href="#back">
+								<span>Close</span>
+							</a>
+							<a class="u28-searchicon" href="#search">
+								<span>Search</span>
+							</a>
+							<span class="u28input">
+								<input id="askoracleinput" name="Ntt" value="" data-prefix="Ask" placeholder="Ask" autocomplete="off" role="combobox" aria-label="Search Oracle.com" tabindex="3">
+								<span class="u28submit">
+									<input class="u28searchbttn" tabindex="0" type="submit" value="Submit Search">
+								</span>
+							</span>
+						</div>
+					</form>
+				</div>
+
+			</div>
+
+			<nav class="u28s4">
+				<a class="u28search u28navitm" id="u28search" href="#" data-lbl="o-search-menu"><span>Search</span></a>
+				<a href="#" data-lbl="o-products-menu" data-target="products" class="u28navitm">Products</a>
+				<a href="#" data-lbl="o-resources-menu" data-target="resources" class="u28navitm">Resources</a>
+				<a href="#" data-lbl="o-support-menu" data-target="support" class="u28navitm">Support</a>
+				<a href="#" data-lbl="o-events-menu" data-target="events" class="u28navitm">Events</a>
+			</nav>
+
+			<div class="u28s3" id="u28s3">
+
+				<div class="u28-profile">
+					<a href="#" class="u28prof" data-lbl="sign-in-account" tabindex="4"><div class="acttxt">View Accounts</div><span>Sign In</span></a>
+					<div class="u28-profilew1">
+					<span class="u28actbck u28back">Back</span>
+						<span class="u28acttitle">Oracle Account</span>
+						<ul class="u28l-out">
+							<li><a href="https://www.oracle.com/webapps/redirect/signon?nexturl=" data-lbl="profile:sign-in-account" class="u28btn1">Sign-In</a></li>
+							<li><a href="https://profile.oracle.com/myprofile/account/create-account.jspx" data-lbl="profile:create-account" class="u28btn2">Create an Account</a></li>
+						</ul>
+						<ul class="u28l-in">
+							<li><a href="/corporate/contact/help.html" data-lbl="help">Help</a></li>
+							<li><a href="javascript:sso_sign_out();" id="u28pfile-sout" data-lbl="signout">Sign Out</a></li>
+						</ul>
+						<div class="u28-profilew2">
+							<span class="u28acttitle">Cloud Account</span>
+							<a href="/cloud/sign-in.html" class="u28cloudbg" data-lbl="go-to-cloud-website">Sign in to Cloud</a>
+							<a href="/cloud/free/?source=:ow:o:h:nav:OHP0625ViewAccountsButton&intcmp=:ow:o:h:nav:OHP0625ViewAccountsButton" class="u28btn2" data-lbl="cta-0625-nav-header-accounts-free-tier-oci">Sign Up for Cloud Free Tier</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="u28w4" id="u28w4">
+		<div class="u28w1a u28w5 clstrgt">
+			<div class="u28w6">
+
+				<!-- Search Results -->
+				<div class="u28w8 u28trgt"></div>
+				<div class="u28w9">
+					<div class="u28result u28noresults">
+						<div class="u28rw1">
+							<div class="u28rw2">
+								<h4>No results found</h4>
+								<p>Your search did not match any results.</p>
+								<p>We suggest you try the following to help find what you&rsquo;re looking for:</p>
+								<ul class="u28w7a">
+									<li>Check the spelling of your keyword search.</li>
+									<li>Use synonyms for the keyword you typed, for example, try &ldquo;application&rdquo; instead of &ldquo;software.&rdquo;</li>
+									<li>Try one of the popular searches shown below.</li>
+									<li>Start a new search.</li>
+								</ul>
+								<h5>Trending Questions</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+	<nav id="u28nav" class="u28nav" data-trackas="menu">
+		<a href="#close" class="mnavback u28back icn-close">Close</a>
+	</nav>
+
+</section>
+<!-- /U28v1 -->
+
+
+
+
+
+<!-- END: oWidget_C/_Raw-Text/Display -->
+
+
+<!-- end : ocom/common/global/components/redwood/layoutAssetStartBodyInfo -->
+
+
+<!-- widgetType = PageTitleBanner -->
+<!-- ptbWidget = true -->
+		
+
+<!-- ptbWidget = true -->
+		
+
+<!-- BEGIN:  oWidget_C/PageTitleBanner/Display -->
+
+
+
+<!-- RH03v1 -->
+<section class="rh03 rh03v1 rw-theme-150bg cmp-overlap" data-trackas="rh03" data-ocomid="rh03" data-bgimg="/a/ocom/img/bgimg02-bgsw-overlay-05.png,/a/ocom/img/bgimg02-bgne-overlay-05.png">
+  <div class="rh03w1 cwidth">
+
+	
+	<div class="rh03bc">
+			<!--BREADCRUMBS-->
+			<div class="rh03bc1">
+				<ol>
+					
+								<li><a href="/cloud/">Cloud</a></li>
+								
+				</ol>
+			</div>
+
+			
+
+				<!--Call to action-->
+				<div class="rh03bc2">
+
+				
+	<!-- Dispatcher:null -->
+	
+<!-- BEGIN: oWidget_C/_Raw-Text/Display -->
+    <div class="rh03bc2">
+        <div class="obttns">
+          <div>
+            <a href="/cloud/free/?source=:ow:o:p:nav:062220DataScienceBC&amp;intcmp=:ow:o:p:nav:072620DataScienceBC" data-cxdtrack=":ow:o:p:nav:072620DataScienceBC" data-adbtrack=":ow:o:p:nav:072620DataScienceBC" data-lbl="hero-cta:try-oracle-cloud-free-tier" class="">Try Oracle Cloud for 30 days free</a>
+          </div>
+        </div>
+      </div>
+
+
+
+<!-- END: oWidget_C/_Raw-Text/Display -->
+
+
+				</div>
+
+			
+
+	</div>
+		
+
+    <div class="herotitle">
+      <h1 class="rwaccent">Data science platform</h1>
+      <p>A data science platform that improves productivity with unparalleled abilities. Build and evaluate higher-quality machine learning (ML) models. Increase business flexibility by putting enterprise-trusted data to work quickly and support data-driven business objectives with easier deployment of ML models.</p>
+    </div>
+    
+        <img class="rh03img1" src="/a/ocom/img/rh03-data-science-cloudbridge-r1.png" alt="data-science-cloud-bridge">
+      
+  </div>
+
+	
+
+  <!--Cards-->
+  <div class="rh03w2 cwidth">
+
+	
+			<!-- Widget - 1 -->
+			
+	<!-- Dispatcher:null -->
+	
+<!-- BEGIN: oWidget_C/_Raw-Text/Display -->
+ <div class="rw-neutral-00bg">
+     <strong>The lifecycle of machine learning models</strong>
+     <p>Building a machine learning model is an iterative process. In this ebook, we break down the process and describe how machine learning models are built.</p>
+     <div class="obttns">
+         <div> <a href="/a/ocom/docs/data-science-lifecycle-ebook.pdf" data-lbl="lifecycle-ml-models">Read the ebook (PDF)</a> </div>
+     </div>
+ </div>
+
+
+
+<!-- END: oWidget_C/_Raw-Text/Display -->
+
+			<!-- Widget - 2 -->
+			
+	<!-- Dispatcher:null -->
+	
+<!-- BEGIN: oWidget_C/_Raw-Text/Display -->
+<div class="rw-neutral-00bg"> 
+<strong>O’Reilly: Machine learning goes to the cloud </strong>
+  <p>Cloud-based machine learning can deliver business insights that create change. Find out how with this new O’Reilly ebook.</p>
+  <div class="obttns">
+    <div> <a href="/a/ocom/docs/machine-learning-goes-to-the-cloud-ebook.pdf">Read the ebook (PDF)</a> </div>
+  </div>
+</div>
+
+
+
+<!-- END: oWidget_C/_Raw-Text/Display -->
+
+
+  </div>
+
+
+
+</section>
+<!-- /RH03v1 -->
+
+<!-- END:  oWidget_C/PageTitleBanner/Display -->
+
+<!-- start : ocom/common/global/components/compass/related-widgets -->
+	<!-- Dispatcher:null -->
+	
+<!-- BEGIN: oWidget_C/_Raw-Text/Display -->
+<!-- RC32v0 -->
+<section class="rc32 rc32v0 cpad rw-neutral-30bg rw-pattern10 rw-pattern-50p rc32imgs" data-ocomid="rc32" data-trackas="rc32" data-lbl="differentiator:">
+  <div class="rc32w0 cwidth">
+    <h2 class="rwaccent">Why a data science platform from Oracle?</h2>
+    <div class="rc32w1 neutral-10">
+      <div class="rc32w2">
+        <div class="rc32w3">
+          <h3>Create and validate high-quality models faster</h3>
+          <p>Build high-quality models faster and easier. Automated machine learning capabilities rapidly examine the data and recommend the optimal data features and best algorithms.  Additionally, automated machine learning tunes the model and explains the model’s results.</p>
+          <a href="/a/ocom/docs/build-machine-learning-solutions-cloud-essentials.pdf" rel="vbox" data-lbl="cta-1:view-machine-learning-ebook">View the machine learning ebook (PDF)</a> </div>
+        <div class="rc32w4"> <img data-src="/a/ocom/img/rc32-data-science-increased-productivity.png" alt="Faster and easier data science models"> </div>
+      </div>
+      <div class="rc32w2">
+        <div class="rc32w3">
+          <h3>Get better results by working with all data </h3>
+          <p>Data scientists need to access data in different formats from different data sources, whether on-premises or in the cloud. Use drag-and-drop data integration and preparation tools to move data into a data lake or data warehouse, simplifying access for data scientists.</p>
+          <a href="/a/ocom/docs/ebook-cloud-infrastructure-data-catalog.pdf" data-lbl="cta-2:Read-data-discovery-ebook">Read the data discovery ebook (PDF)</a> </div>
+        <div class="rc32w4"> <img data-src=" /a/ocom/img/rc32-data-science-greater-flexibility.png" alt="Data scientist access all data"> </div>
+      </div>
+      <div class="rc32w2">
+        <div class="rc32w3">
+          <h3>Deliver trusted artificial intelligence</h3>
+          <p>AI is more trusted when multiple contributors effectively collaborate, and machine learning tools provide explanation and evaluation of models. Oracle security tools and user interfaces enable multiple roles to participate in projects and share models. Model-agnostic explanation helps data scientists, business analysts, and executives have confidence in the results.</p>
+          <a href="https://blogs.oracle.com/datascience/faster-data-science-and-machine-learning-with-oracle-accelerated-data-science-ads-library" data-lbl="cta-3:read-more-about-data-science">Read more about accelerated data science</a> </div>
+        <div class="rc32w4"> <img data-src="/a/ocom/img/rc32-data-science-trusted.png" alt="Data science meet AI"> </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /RC32v0 --> 
+
+
+
+
+<!-- END: oWidget_C/_Raw-Text/Display -->
+
+	<!-- Dispatcher:null -->
+	
+<!-- BEGIN: oWidget_C/_Raw-Text/Display -->
+<!-- RC30v1 Products -->
+<section class="rc30 rc30v1 cpad rw-theme-130bg rw-pattern-theme1w rw-pattern-8p" data-trackas="rc30" data-ocomid="rc30" data-lbl="products:">
+  <div class="rc30w1 cwidth">
+    <h2 class="rwaccent">Oracle data science platform</h2>
+    <div class="rc30w2">
+      <form class="oform rc30mobnav">
+        <span class="oform-w1"> <span class="oselect">
+        <select name="f4">
+          <option value="#rc30p1">Oracle Cloud Infrastructure Data Science</option>
+          <option value="#rc30p2">Oracle Machine Learning</option>
+          <option value="#rc30p3">Oracle Cloud Infrastructure Virtual Machines</option>
+          <option value="#rc30p4">Supporting platform services</option>
+        </select>
+        </span> </span>
+      </form>
+    </div>
+    <div class="rc30w3">
+      <div class="rc30w4 rc30pane rc30pane-bleed" id="rc30p1" data-lbl="product-1:">
+        <div class="col-framework col2">
+          <div class="col-w1">
+            <div class="col-item rw-neutral-30bg">
+              <div class="col-item-w1 rc30w10">
+                <div class="rc30w5">
+                  <h4>Accelerate machine learning model development</h4>
+                  <p>Enables data scientists to build, train, and manage machine learning models on Oracle Cloud using an open source Python ecosystem enhanced by Oracle for automated machine learning (AutoML), model evaluation, and model explanation.</p>
+                  <div class="rc30cta">
+                    <div class="obttns">
+                      <div> <a href="/data-science/cloud-infrastructure-data-science-product.html" data-lbl="product-1-see-product-details:">See product details</a> </div>
+                      <div class="obttn1"> <a href="?bcid=6129284862001" rel="vbox" class="icn-triangle-right" data-lbl="product-1-Watch-the-video:">Watch the video (1:36)</a> </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-item rw-neutral-30bg">
+              <div class="col-item-w1 rc30w11">
+                <div data-bgimg="/a/ocom/img/rc30v1-data-science-oracle-cloud-infrustracture-data-science.png"><br />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rc30w4 rc30pane rc30pane-bleed" id="rc30p2" data-lbl="product-2:">
+        <div class="col-framework col2">
+          <div class="col-w1">
+            <div class="col-item rw-neutral-30bg">
+              <div class="col-item-w1 rc30w10">
+                <div class="rc30w5">
+                  <h4>Machine learning for everyone</h4>
+                  <p>Build and deploy machine learning models in Oracle Autonomous Database using scalable and optimized in-database algorithms.</p>
+                  <div class="rc30cta">
+                    <div class="obttns">
+                      <div> <a href="/database/technologies/datawarehouse-bigdata/machine-learning.html" data-lbl="discover-machine-learning-tools">Discover Oracle Machine Learning tools</a> </div>
+                      <div class="obttn1"> <a href="/a/tech/docs/oml4sql-algorithm-cheat-sheet.pdf" data-lbl="read-ml-algorithms-in-oracle-db">Read about ML algorithms in Oracle Database (PDF)</a> </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-item rw-neutral-30bg">
+              <div class="col-item-w1 rc30w11">
+                <div data-bgimg="/a/ocom/img/rc30v1-data-science-oracle-machine-learning.png"><br />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rc30w4 rc30pane rc30pane-bleed rw-neutral-30bg" id="rc30p3" data-lbl="product-3:">
+        <div class="col-framework col2">
+          <div class="col-w1">
+            <div class="col-item rw-neutral-30bg">
+              <div class="col-item-w1 rc30w10">
+                <div class="rc30w5">
+                  <h4>Build machine learning models without the expense</h4>
+                  <p>Get up and running quickly with GPU-based environments, preconfigured with popular IDEs, notebooks, and machine learning frameworks. Easily deploy from Oracle Cloud Marketplace on your choice of compute shape.</p>
+                  <div class="rc30cta">
+                    <div class="obttns">
+                      <div> <a href="/cloud/compute/virtual-machines-data-science.html" data-lbl="see-product-details:">See product details</a> </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-item rw-neutral-30bg">
+              <div class="col-item-w1 rc30w11">
+                <div data-bgimg="/a/ocom/img/rc30v1-data-science-oracle-cloud-infrustracture-virtual-machines.png"><br />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rc30w4 rc30pane rc30pane-bleed" id="rc30p4" data-lbl="product-4:">
+        <div class="col-framework col2">
+          <div class="col-w1">
+            <div class="col-item rw-neutral-30bg">
+              <div class="col-item-w1 rc30w10">
+                <div class="rc30w5">
+                  <h4>Complete your environment with end-to-end data services</h4>
+                  <p>A data science platform is more than just a good set of tools for building machine learning models. Oracle's data science platform includes a complete set of capabilities to support an end-to-end data science pipeline.</p>
+                  <div class="rc30cta">
+                    <div class="obttns"> </div>
+                  </div>
+                  <h5>Modules</h5>
+                  <ul class="odlist">
+                    <li><a href="/middleware/application-integration/" data-lbl="product-4:see-product-details">Data ingestion and transformation</a> </li>
+                    <li><a href="/big-data/" data-lbl="modules:data-management">Data management</a> </li>
+                    <li><a href="/big-data/data-catalog/" data-lbl="modules:data-exploration">Data exploration</a> </li>
+                    <li><a href="/cloud/" data-lbl="modules:cloud-infrastructure-services">Oracle Cloud Infrastructure services</a> </li>
+                    <li><a href="/solutions/chatbots/" data-lbl="modules:oracle-digital-assistant">Oracle Digital Assistant</a> </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-item rw-neutral-30bg">
+              <div class="col-item-w1 rc30w11">
+                <div data-bgimg="/a/ocom/img/rc30v1-data-science-supporting-platform-services.png"><br />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /RC30v1 --> 
+
+
+
+<!-- END: oWidget_C/_Raw-Text/Display -->
+
+	<!-- Dispatcher:null -->
+	
+<!-- BEGIN: oWidget_C/_Raw-Text/Display -->
+<!-- RC04v0 -->
+<section class="rc04 rc04v0 cpadx o-bgimg darktheme" data-trackas="rc04" data-ocomid="rc04" data-bgimg="/a/ocom/img/rc04v2x1-agroscout.jpg">
+	<div class="rc04w1 cwidth">
+
+			<div class="col-framework col2">
+
+				<div class="col-w1">
+
+					<div class="col-item">
+						<div class="col-item-w1">
+							<img src="/a/ocom/img/rc04-agro-scout-logo.png" alt="AgroScout logo">
+						</div>
+						<div class="col-item-w2">
+							<h3>AgroScout and Oracle: fighting hunger with next-gen technology</h3>
+							<p>&nbsp;</p>
+						</div>
+						<div class="col-item-w3">
+							<div class="obttns">
+								<div class="obttn">
+									<a href="?bcid=6113807242001" rel="vbox" data-lbl="button:lighbox-open-watch-the-video:placeholder" data-trackas="lightbox" class="rc04play icn-img icn-play">Watch the video (1:39)</a>
+								</div>
+								<div class="obttn1">
+									<a href="/customers/infrastructure/agroscout/">View the story</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-item-w4">
+							<a href="/cloud/">Explore Oracle Cloud Infrastructure</a>
+							<div class="rc04w2">
+								<div class="rc04w3">Industry: <span>HIGH TECHNOLOGY</span></div> <div class="rc04w3">Location: <span>ISRAEL</span></div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+	</div>
+</section>
+<!-- /RC04v0 -->
+
+
+
+<!-- END: oWidget_C/_Raw-Text/Display -->
+
+	<!-- Dispatcher:null -->
+	
+<!-- BEGIN: oWidget_C/_Raw-Text/Display -->
+<!-- RC29v0 -->
+<section class="rc29 rc29v0"
+    data-feedsrc="https://www.oracle.com/compendium/api/datascience.json"
+    data-template="rc29-blogfeed"
+    data-trackas="rc29"
+    data-ocomid="rc29">
+
+    <div class="rc29w1">
+        <div class="col-framework col2">
+            <div class="col-w1">
+                <div class="col-item cpad cwidth rw-neutral-10bg" data-bgimg="/assets/images/bgimg02/bgimg02-bgsw-blogs-fpo01.png">
+                    <strong class="rc29sub">March 11, 2020</strong>
+                    <h3>Robust AI in Financial Services</h3>
+                   <em>Swetasudha Panda, Senior Member of Technical Staff, Oracle Labs</em>
+                    <p>Machine learning models are increasingly being used to make critical decisions in various regulated domains, such as hiring or credit/lending decisions. However on multiple occasions, such models have been reported to exhibit discriminatory behavior with respect to various legally recognized protected groups.</p>
+                    <div class="rc29lnk"><a href="https://blogs.oracle.com/datascience/robust-ai-in-financial-services" data-lbl="featured-blog:read-complete-article">Read the complete post</a> | <a href="https://go.oracle.com/LP=84731?elqCampaignId=109966&bn=odsn">Subscribe to the blog</a></div>
+                </div>
+                <div class="col-item cwidth cpad cwidth rw-neutral-20bg" data-bgimg="/a/ocom/img/bgimg02-bgne-blogs-02.png">
+                    <h4>Featured blogs</h4>
+
+                    <div class="rfeed">
+                        <!-- data-feedsrc items -->
+                    </div>
+
+                     <a class="rc29lnk" href="https://blogs.oracle.com/datascience/" data-lbl="blog-view-all:data-science">View all</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /RC29v0 -->
+
+
+
+<!-- END: oWidget_C/_Raw-Text/Display -->
+
+	<!-- Dispatcher:null -->
+	
+<!-- BEGIN: oWidget_C/_Raw-Text/Display -->
+<!-- RC36v0 -->
+<section class="rc36 rc36v0 cpad rw-neutral-10bg rw-pattern6 rw-pattern-10p" data-ocomid="rc36" data-trackas="rc36">
+  <div class="rc36w1 cwidth">
+    <h2>Data science platform features</h2>
+    <div class="rc36w2">
+      <ul>
+        <li>
+          <h3>AutoML</h3>
+          <p>Automated machine learning (AutoML) helps all data scientists by automating algorithm selection, data and feature selection, and model tuning. This enables faster time to results, more accurate and reliable results, and less compute time.</p>
+        </li>
+        <li>
+          <h3>In-database optimized algorithms </h3>
+          <p>Oracle Database includes more than 30 high-performance, fully scalable algorithms covering commonly used machine learning techniques, such as anomaly detection, regression, classification, clustering, and more. Data already in Oracle Database does not need to be moved, reducing the data management workload for data scientists and allowing them to focus on building production models.</p>
+        </li>
+        <li>
+          <h3>Open source libraries and frameworks</h3>
+          <p>Use and import open source libraries and frameworks of choice to enable data transformation, visualization, and model building. These include, but are not limited to: pandas, Dask, and NumPy for transformation, Seaborn, Plotly, and Matplotlib for visualization, and TensorFlow, Keras, and PyTorch for model building.</p>
+        </li>
+        <li>
+          <h3>Choice of deployment</h3>
+          <p>Quickly deploy models for access by applications and business analysts. Models can be deployed with a REST API in a serverless, scalable cloud architecture as Oracle Functions or directly in the database.</p>
+        </li>
+        <li>
+          <h3>Model explanation</h3>
+          <p>Model explanation enables experts and nonexperts alike to understand what caused a model to return a particular result. With model explanation, it’s easy to understand the importance of features, and how to generate more, or less, of an outcome.</p>
+        </li>
+ <li>
+          <h3>Access any data flexibly and easily</h3>
+          <p>Use Python to access data in many different formats (including CSV, Excel, JSON, and more), many different sources (including object storage, Oracle Database, MongoDB, PostgreSQL, and more), and many different locations (on-premises, Oracle Cloud, and other clouds).</p>
+        </li>
+      </ul>
+    </div>
+    <div class="rc36w3"> <img class="rc36img" data-src="/a/ocom/img/rc36-data-science-use-cases.png" alt="data-science-benefits"> </div>
+  </div>
+</section>
+<!-- /RC36v0 -->
+
+
+
+<!-- END: oWidget_C/_Raw-Text/Display -->
+
+	<!-- Dispatcher:null -->
+	
+<!-- BEGIN: oWidget_C/_Raw-Text/Display -->
+<!-- RC30v0 --><!-- DO NOT CHANGE THE bgimg02 BACKGROUND IMAGES -->
+<section class="rc30 rc30v0 cpad o-bgimg" data-trackas="rc30" data-ocomid="rc30" data-bgimg="/a/ocom/img/bgimg02-bgsw-50opacity-resources-01.png,/a/ocom/img/bgimg02-bgne-50opacity-resources-01.png" data-lbl="resources:">
+  <div class="rc30w1 cwidth">
+    <h3>Resources</h3>
+    <div class="rc30w2">
+      <form class="oform rc30mobnav">
+        <span class="oform-w1"> <span class="oselect">
+        <select name="f4">
+          <option value="#rc30cloudtraining">Cloud learning</option>
+          <option value="#rc30relatedcontent">Related content</option>
+        </select>
+        </span> </span>
+      </form>
+    </div>
+    <div class="rc30w3">
+      <div class="rc30w4 rc30pane" id="rc30cloudtraining" data-lbl="cloud-training">
+        <div class="col-framework col2">
+          <div class="col-w1">
+            <div class="col-item rw-neutral-30bg">
+              <div class="col-item-w1 rc30w10">
+                <div class="rc30w5">
+                  <div class="rc30w6"><img data-src="/a/ocom/img/rc30v0-learning-sm-r1.jpg" alt="cloud learning" /></div>
+                </div>
+                <div class="rc30w5">
+                  <h4>Free hands-on product experience</h4>
+                  <p>Try out tools for building machine learning models. No need to sign up for a cloud account.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-item rw-neutral-40bg">
+              <div class="col-item-w1 rc30w11">
+                <h4>Resources</h4>
+                <ul class="icn-ulist">
+                  <li><a href="https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/view-workshop?p180_id=673" rel="vbox" data-lbl="news-and-doc:training:cta1">Oracle Cloud Infrastructure Data Science</a></li>
+                  <li><a href="https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/view-workshop?p180_id=560" data-lbl="news-and-doc:training:cta3">Oracle Machine Learning Notebooks in Autonomous Data Warehouse</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rc30w4 rc30pane" id="rc30relatedcontent" data-lbl="related-content:">
+        <div class="col-framework col2">
+          <div class="col-w1">
+            <div class="col-item rw-neutral-30bg">
+              <div class="col-item-w1 rc30w10">
+                <div class="rc30w5">
+                  <h4>Datasheets</h4>
+                  <ul>
+                    <li><a href="/a/ocom/docs/cloud/data-science-ds.pdf">Oracle Cloud Infrastructure Data Science (PDF)</a></li>
+                    <li><a href="/a/ocom/docs/oracle-machine-learning-oaa-solution-brief.pdf">Oracle Machine Learning (PDF)</a></li>
+                    <li><a href="https://blogs.oracle.com/datascience/vm-for-data-science-and-ai-on-oracle-cloud-infrastructure-speeds-ai-application-development-for-data-scientists">Oracle Cloud Infrastructure Virtual Machines </a></li>
+                  </ul>
+                </div>
+                <div class="rc30w5">
+                  <h4>Blogs</h4>
+                  <ul>
+                    <li><a href="https://blogs.oracle.com/datascience/how-does-automl-impact-machine-learning">How Does AutoML Impact Machine Learning? </a></li>
+                    <li><a href="https://blogs.oracle.com/datascience/why-data-science-platform">Why You Need a Data Science Platform More Than You Think</a></li>
+                    <li><a href="https://blogs.oracle.com/bigdata/how-machine-learning-solves-real-world-problems">How Machine Learning Solves Real-World Problems</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-item rw-neutral-40bg">
+              <div class="col-item-w1 rc30w11">
+                <h4>On-demand webcasts</h4>
+                <ul class="icn-ulist">
+                  <li><a href="https://go.oracle.com/LP=88385?elqCampaignId=237382">Discover Oracle’s Machine Learning Platform </a></li>
+                  <li><a href="https://go.oracle.com/LP=89718?elqCampaignId=240713">Accelerate Data Science on Oracle Cloud </a></li>
+                  <li><a href="https://go.oracle.com/LP=87890?elqCampaignId=232455">Explore, Access, and Integrate Any Data, Anywhere </a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /RC30v0 --> 
+
+
+
+
+<!-- END: oWidget_C/_Raw-Text/Display -->
+
+	<!-- Dispatcher:null -->
+	
+<!-- BEGIN: oWidget_C/_Raw-Text/Display -->
+<!-- RC31v0 -->
+<section class="rc31 rc31v0 cpad rw-neutral-10bg rw-pattern13 rw-pattern-20p" data-ocomid="rc31" data-trackas="rc31">
+  <div class="rc31w1 cwidth">
+    <h2>Get started</h2>
+    <div class="col-framework col-justified col3 col-gutters">
+      <div class="col-w1">
+        <div class="col-item">
+          <div class="col-item-w1 rw-yellow-40bg">
+            <div class="icn-img icn-cloud"><br />
+            </div>
+            <h3>Twitter</h3>
+          </div>
+          <div class="col-item-w2">
+            <p>See the official Oracle data science Twitter feed.</p>
+            <div class="obttns">
+              <div class="obttn1"> <a href="https://twitter.com/OracleDataSci">Follow us</a> </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-item">
+          <div class="col-item-w1 rw-yellow-40bg">
+            <div class="icn-img icn-touch-device"><br />
+            </div>
+            <h3>Subscribe to our blog</h3>
+          </div>
+          <div class="col-item-w2">
+            <p>Get the latest news and tips from Oracle data science.</p>
+            <div class="obttns">
+              <div class="obttn1"> <a href="https://go.oracle.com/LP=84731?elqCampaignId=109966&bn=odsn">Subscribe now</a> </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-item">
+          <div class="col-item-w1 rw-yellow-40bg">
+            <div class="icn-img icn-location-pin"><br />
+            </div>
+            <h3>Contact sales</h3>
+          </div>
+          <div class="col-item-w2">
+            <p>Contact Oracle’s global sales team to learn more about Oracle data science and machine learning.</p>
+            <div class="obttns">
+              <div class="obttn1"> <a href="/data-science/contact-form.html" data-width="640" rel="lightbox" title="Contact Oracle Data Science" data-lbl="lightbox:contact-oracle-data-science">Get in touch</a> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /RC31v0 --> 
+
+
+
+<!-- END: oWidget_C/_Raw-Text/Display -->
+
+<!-- end : ocom/common/global/components/compass/related-widgets -->
+<!-- start : ocom/common/global/components/framework/layoutAssetEndBodyInfo -->
+	<!-- Dispatcher:null -->
+	
+<!-- BEGIN: oWidget_C/_Raw-Text/Display -->
+<!-- U10v0 -->
+<div id="u10" class="u10 u10v6" data-trackas="ffooter" data-ocomid="u10">
+	<div class="u10w1">
+		
+<div class="u10w2">
+<div class="u10w3">
+<h5>Resources for</h5>
+<ul>
+<li><a data-lbl="resources-for:developers" href="https://developer.oracle.com/">Developers</a></li>
+<li><a data-lbl="resources-for:startups" href="/startup/">Startups</a></li>
+<li><a data-lbl="resources-for:students-educators" href="https://academy.oracle.com/en/oa-web-overview.html">Students and Educators</a></li>
+</ul>
+</div>
+</div>
+
+<div class="u10w2">
+<div class="u10w3">
+<h5>Partners</h5>
+<ul>
+<li><a data-lbl="partners:oracle-partnernetwork-ocom" href="/partnernetwork/">Oracle PartnerNetwork</a></li>
+<li><a data-lbl="partners:find-a-partner" href="https://partner-finder.oracle.com/">Find a Partner</a></li>
+<li><a data-lbl="partners:login-opn" href="/opn/index.html">Log in to OPN</a></li>
+</ul>
+</div>
+</div>	
+
+<div class="u10w2">
+<div class="u10w3">
+<h5>Solutions</h5>
+<ul>
+<li><a data-lbl="emerging-technlogy:artificial-intelligence" href="/artificial-intelligence/">Artificial Intelligence</a></li>
+<li><a data-lbl="emerging-technlogy:internet-of-things" href="/internet-of-things/">Internet of Things</a></li>
+<li><a data-lbl="emerging-technlogy:blockchain" href="/blockchain/">Blockchain</a></li>
+</ul>
+</div>
+</div>
+
+<div class="u10w2">
+<div class="u10w3">
+<h5>What&rsquo;s New</h5>
+<ul>
+<li><a data-lbl="whatsnew:covid-19-1002-research" href="/corporate/covid-19/research/" data-cxdtrack=":ow:off:ot:::GFooter100220" data-adbtrack=":ow:off:ot:::GFooter100220">How we&rsquo;re taking on COVID-19</a></li>
+<li><a data-lbl="whatsnew:java-SE-downloads" href="/java/technologies/javase-downloads.html">Java SE Downloads</a></li>
+<li><a data-lbl="whatsnew:cloud-trial" href="/cloud/free/?source=:ow:o:h:nav:050120SiteFooter&intcmp=:ow:o:h:nav:050120SiteFooter">Try Oracle Cloud Free Tier</a></li>
+
+
+</ul>
+</div>
+</div>
+
+
+<div class="u10w2">
+<div class="u10w3">
+<h5>Contact Us</h5>
+<ul>
+<li><a href="tel:18006330738">US Sales: +1.800.633.0738</a></li>
+<li><a data-lbl="contact-us:how-can-we-help" href="/corporate/contact/">How can we help?</a></li>
+<!--<li><a data-lbl="contact-us:support-directory" href="/support/contact.html">Support Directory</a></li>-->
+<li><a data-lbl="contact-us:subscribe-to-emails" href="https://go.oracle.com/subscriptions">Subscribe to emails</a></li>
+</ul>
+</div>
+</div>
+
+<div class="u10w4">
+<hr />
+</div>
+<div class="u10w5" data-trackas="footer">
+<ul class="scl-icons">
+<li class="scl-facebook"><a data-lbl="scl-icon:facebook" href="https://www.facebook.com/Oracle/" title="Oracle on Facebook">Facebook</a></li>
+<li class="scl-twitter"><a data-lbl="scl-icon:twitter" href="https://twitter.com/oracle" title="Follow Oracle on Twitter">Twitter</a></li>
+<li class="scl-linkedin"><a data-lbl="scl-icon:linkedin" href="https://www.linkedin.com/company/oracle/" title="Oracle on LinkedIn">LinkedIn</a></li>
+<li class="scl-youtube"><a data-lbl="scl-icon:you-tube" href="http://www.youtube.com/oracle/" title="Watch Oracle on YouTube">YouTube</a></li>
+</ul>
+
+<div class="u10-ologo"><a data-lbl="integrated-cloud-applications-and-platform-services" href="/">Oracle</a></div>
+<h3>Integrated Cloud Applications &amp; Platform Services</h3>
+
+<ul class="u10-links">
+<li><a data-lbl="copyright" href="/legal/copyright.html">&copy; 2020 Oracle</a></li>
+<li><a data-lbl="site-map" href="/sitemap.html">Site Map</a></li>
+<li><a data-lbl="privacy" href="/legal/privacy/">Privacy</a><span>/</span><a data-lbl="do-not-sell-my-info" href="/legal/privacy/privacy-choices.html">Do Not Sell My Info</a></li>
+<li class="u10mtool" id="u10cmenu"><a data-lbl="country-region" class="u10ticon u10regn" href="/universal-menu/index.html#u10countrymenu">Country/Region</a></li>
+<li><div id="teconsent"></div></li>
+<li><a data-lbl="ad-choices" href="/legal/privacy/marketing-cloud-data-cloud-privacy-policy.html#adchoices">Ad Choices</a></li>
+<li><a data-lbl="careers" href="/corporate/careers/">Careers</a></li>
+</ul>
+
+</div>
+</div>
+</div>
+<!-- /U10v0 -->
+
+
+
+<!-- END: oWidget_C/_Raw-Text/Display -->
+
+
+	</div>
+
+	
+<!-- Container/Display Start -->
+
+<!-- BEGIN: oWidget_C/_Raw-Text/Display -->
+<!-- Start - End Body Admin Container -->
+<!-- Start SiteCatalyst code -->
+<script language="JavaScript" src="https://www.oracleimg.com/us/assets/metrics/ora_ocom.js"></script>
+<!-- End SiteCatalyst code -->
+<!--DTM embed code - Footer -->
+<script type="text/javascript">_satellite.pageBottom();</script>
+<!--End-->
+<!-- End - End Body Admin Container -->
+
+
+
+<!-- END: oWidget_C/_Raw-Text/Display -->
+
+<!-- Container/Display end -->
+
+
+<!-- end : ocom/common/global/components/framework/layoutAssetEndBodyInfo -->
+
+
+	<noscript><img src="https://www.oracle.com/akam/11/pixel_1332fb46?a=dD0wYjU1NDkwMGEyMDRkMWFiNWE4YzY3YzgxNmVhOWM0MTIwMWM5YTFjJmpzPW9mZg==" style="visibility: hidden; position: absolute; left: -999px; top: -999px;" /></noscript></body>
+<!-- end : Framework/Redwood2 -->
+</html>

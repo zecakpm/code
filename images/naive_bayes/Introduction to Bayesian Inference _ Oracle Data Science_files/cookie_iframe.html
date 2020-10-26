@@ -1,0 +1,176 @@
+
+<!-- saved from url=(0264)https://prefmgr-cookie.truste-svc.net/cookie_js/cookie_iframe.html?parent=https://consent-pref.trustarc.com/?type=oracle6&site=oracle.com&action=notice&country=ie&locale=en&behavior=expressed&gtm=1&layout=default_eu&irm=undefined&from=https://consent.trustarc.com/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body data-new-gr-c-s-check-loaded="14.981.0" class="vsc-initialized">
+<script type="text/javascript">
+function createCookie(name,value,days) {
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime()+(30000));
+        var expires = "; expires="+date.toGMTString();
+    }
+    else var expires = "";
+    if (shouldSendSameSiteNone(navigator.userAgent)) {
+      document.cookie = name+"="+value+expires+"; path=/; secure; SameSite=None";
+    } else {
+      document.cookie = name+"="+value+expires+"; path=/";
+    }
+}
+
+function readCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1,c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+    }
+    return null;
+}
+
+function eraseCookie(name) {
+    createCookie(name,"",-1);
+}
+
+function gup( name )
+{
+  name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+  var regexS = "[\\?&]"+name+"=([^&#]*)";
+  var regex = new RegExp( regexS );
+  var results = regex.exec( window.location.href );
+  if( results == null )
+    return "";
+  else
+    return results[1];
+}
+
+function readDelay()
+{
+  if(readCookie('cookie_3rdparty'))
+  {
+      ifrm = document.createElement("IFRAME");
+      var parenturl = gup("parent");
+      if(parenturl.indexOf("?")>=0)
+     	  parenturl = parenturl.split("?")[0];
+      parenturl = parenturl.substr(0, parenturl.lastIndexOf("/")+1);
+      if(parenturl.match('^http')) {
+        ifrm.setAttribute("src", parenturl+"cookie_inneriframe.html");
+        document.body.appendChild(ifrm);
+      }
+  }
+}
+
+function shouldSendSameSiteNone(useragent) {
+  return !isSameSiteNoneIncompatible(useragent);
+}
+
+// Classes of browsers known to be incompatible.
+function isSameSiteNoneIncompatible(useragent) {
+  return hasWebKitSameSiteBug(useragent) || dropsUnrecognizedSameSiteCookies(useragent);
+}
+
+function hasWebKitSameSiteBug(useragent) {
+  return isIosVersion(12, useragent) || (isMacosxVersion(10, 14, useragent) && (isSafari(useragent) || isMacEmbeddedBrowser(useragent)));
+}
+
+function dropsUnrecognizedSameSiteCookies(useragent) {
+  if (isUcBrowser(useragent)) {
+    return !isUcBrowserVersionAtLeast(12, 13, 2, useragent)
+  }
+  return isChromiumBased(useragent) && isChromiumVersionAtLeast(51, useragent) && !isChromiumVersionAtLeast(67, useragent);
+}
+// Regex parsing of User-Agent string. (See note above!)
+
+function isIosVersion(major, useragent) {
+  var reg = new RegExp('[(]iP.+; CPU .*OS (\\d+)[_\\d]*.*[)] AppleWebKit[/]', 'ig');
+  var matches = reg.exec(useragent);
+  if (matches && matches.length === 2) {
+    var version = +matches[1];
+    return version === major;
+  }
+  return false;
+}
+
+function isMacosxVersion(major, minor, useragent) {
+  var reg = new RegExp('[(]Macintosh;.*Mac OS X (\\d+)_(\\d+)[_\\d]*.*[)] AppleWebKit[/]', 'ig');
+  var matches = reg.exec(useragent);
+  // Extract digits from first and second capturing groups.
+  if (matches && matches.length === 3) {
+    var major_version = +matches[1];
+    var minor_version = +matches[2];
+    return (major_version === major) && (minor_version === minor);
+  }
+  return false;
+}
+    
+function isSafari(useragent) {
+  var reg = new RegExp('Version[/].* Safari[/]', 'ig');
+  var matches = reg.exec(useragent);
+  if (matches && matches.length) {
+    return !isChromiumBased(useragent);
+  }
+  return false; 
+}
+    
+function isMacEmbeddedBrowser(useragent) {
+  var reg = new RegExp('^Mozilla[/][.\\d]+ [(]Macintosh;.*Mac OS X [_\\d]+[)] AppleWebKit[/][.\\d]+ [(]KHTML, like Gecko[)]$', 'ig');
+  var matches = reg.exec(useragent);
+  if (matches && matches.length) {
+    return true;
+  }
+  return false;
+}
+
+function isChromiumBased(useragent) {
+  var reg = new RegExp('Chrom(e|ium)', 'ig');
+  var matches = reg.exec(useragent);
+  if (matches && matches.length) {
+    return true;
+  }
+  return false;
+}
+
+function isChromiumVersionAtLeast(major, useragent) {
+  var reg = new RegExp('Chrom[^ /]+[/](\\d+)[.\\d]* ', 'ig');
+  var matches = reg.exec(useragent);
+  if (matches && matches.length === 2) {
+    var version = +matches[1];
+    return version >= major;
+  }
+  return false;
+}
+
+function isUcBrowser(useragent) {
+  var reg = new RegExp('UCBrowser[/]', 'ig');
+  var matches = reg.exec(useragent);
+  if (matches && matches.length) {
+    return true;
+  }
+  return false;
+}
+
+function isUcBrowserVersionAtLeast(major, minor, build, useragent) {
+  var reg = new RegExp('UCBrowser[/](\\d+)[.](\\d+)[.](\\d+)[.\\d]* ', 'ig');
+  var matches = reg.exec(useragent);
+  if (matches && matches.length === 4) {
+    var major_version = +matches[1];
+    var minor_version = +matches[2];
+    var build_version = +matches[3];
+    if (major_version != major) {
+      return major_version > major;
+    }
+    if (minor_version != minor) {
+      return minor_version > minor;
+    }
+    return build_version >= build;
+  }
+  return false;
+}
+
+createCookie('cookie_3rdparty', 'enabled', 7);
+
+var t = setTimeout("readDelay()", 300);
+
+</script>
+
+
+</body></html>
