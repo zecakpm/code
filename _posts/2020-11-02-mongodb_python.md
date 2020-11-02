@@ -3,10 +3,10 @@ title: "MongoDB - Creating, querying and transformig data with Python"
 date: 2020-10-25
 tags: [Mongo DB, Python, Cloud, Data Wrangling]
 header:
-  image: "/images/mondoDB/mongo_DB.jpeg"
+  image: "/images/mongoDB/mongo_DB.jpeg"
 excerpt: "Data Cleaning, Machine Learning, Data Science"
 ---
-**Image Credits** Smith Collection / Gado / Getty Images
+####### **Image Credits** Smith Collection / Gado / Getty Images
 
 
 ### MongoDB
@@ -54,8 +54,10 @@ information = mydb.employeeinformation
 
 ### Adding records
 All the recors must follow the JSON key pair formatt.
+Lets check how to insert one or more records.
 
 ```python
+#one record
 record={
         'firstname':'Mary',
         'lastname':'Murphy',
@@ -65,6 +67,52 @@ record={
         
 information.insert_one(record)
 ```
+
+<img src="{{ site.url }}{{ site.baseurl }}/images/mongoDB/2.jpg" alt="linearly separable data">
+
+
+```python
+
+#adding multiple records in a list format
+
+record=[{
+        'firstname':'John',
+        'lastname':'Gates',
+        'department':'Analytics',
+        'qualification':'statistics',
+        'age':35
+        
+        },
+         {
+        'firstname':'Mark',
+        'lastname':'Lee',
+        'department':'Analytics',
+        'qualification':'masters',
+        'age':30
+        
+        },
+        {
+        'firstname':'Chloe',
+        'lastname':'McGuire',
+        'department':'Analytics',
+        'qualification':'phd',
+        'age':34
+        
+        },
+        {
+        'firstname':'Michael',
+        'lastname':'Smith',
+        'department':'Analytics',
+        'qualification':'master',
+        'age':32
+        
+        }]
+        
+information.insert_many(record)
+
+```
+
+<img src="{{ site.url }}{{ site.baseurl }}/images/mongoDB/3.jpg" alt="linearly separable data">
 
 
 
