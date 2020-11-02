@@ -18,7 +18,7 @@ MongoDB is a righly scalable database. All info is stored as JSON files, whitch 
 
 ### Objective
 
-I will be exploring how to create, query and transform data into a Pandas data frame in Python.
+I will be exploring how to create, query and transform data into a Pandas DataFrame in Python.
 
 With no further delays, lets get our hands dirt.
 
