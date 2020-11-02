@@ -9,21 +9,21 @@ excerpt: "Data Cleaning, Machine Learning, Data Science"
 **Image Credits** Smith Collection / Gado / Getty Images
 
 
-#MongoDB
+# MongoDB
 
 MondoDB is a righly scalable database. All info is stored as JSON files, whitch makes it very fast and scalable.
 
-#Terminology
-*Collection
-**Name used for tables
+# Terminology
+* Collection
+** Name used for tables
 
-#Objective
+# Objective
 
 I will be exploring how to create, query and transform data into a Pandas data frama in Python.
 
 With no further delays, lets get ours hands dirt.
 
-##Importing libraries and establish connection with Mongo Server
+## Importing libraries and establish connection with Mongo Server
 
 ```python
 from flask_pymongo import pymongo as pm
@@ -33,7 +33,7 @@ from pymongo import MongoClient as mc
 connection = mc('localhost',27017)
 ```
 
-##Creating a data base
+## Creating a data base
 If a database does not exist under this name, a new data will be created.
 
 ```python
@@ -41,7 +41,7 @@ If a database does not exist under this name, a new data will be created.
 mydb = client['Employee']
 ```
 
-##Creating a collection
+## Creating a collection
 Remember that your collection will only be available after the first document is inserted.
 
 ```python
@@ -50,7 +50,7 @@ information = mydb.employeeinformation
 ```
 
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/naive_bayes/1.jpg" alt="linearly separable data">
+<img src="{{ site.url }}{{ site.baseurl }}/images/mongoDB/1.jpg" alt="linearly separable data">
 
 
 
