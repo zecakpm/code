@@ -18,9 +18,9 @@ MongoDB is a righly scalable database. All info is stored as JSON files, whitch 
 
 ### Objective
 
-I will be exploring how to create, query and transform data into a Pandas data frama in Python.
+I will be exploring how to create, query and transform data into a Pandas data frame in Python.
 
-With no further delays, lets get ours hands dirt.
+With no further delays, lets get our hands dirt.
 
 ### Importing libraries and establish connection with Mongo Server
 
@@ -33,7 +33,7 @@ connection = mc('localhost',27017)
 ```
 
 ### Creating a data base
-If a database does not exist under this name, a new data will be created.
+If a database does not exist under this name, a new data base will be created.
 
 ```python
 #createing a database
@@ -41,7 +41,7 @@ mydb = client['Employee']
 ```
 
 ### Creating a collection
-Remember that your collection willbe available after the first document is inserted.
+Remember that your collection will be available after the first document is inserted.
 
 ```python
 #creating a colletion 
@@ -53,7 +53,7 @@ information = mydb.employeeinformation
 
 
 ### Adding records
-All the recors must follow the JSON key pair formatt.
+All the recors must follow the JSON key pair format.
 Lets check how to insert one or more records.
 
 ```python
@@ -130,7 +130,7 @@ for item in information.find():
 ```
 <img src="{{ site.url }}{{ site.baseurl }}/images/mongoDB/4.jpg" alt="linearly separable data">
 
-#### Seraching for one or /and more specific records
+### Searching for one or /and more specific records
 
 Selecting a specific name.
 
@@ -161,7 +161,7 @@ for item in information.find({'qualification':'master','age':{'$lt':35}}):
 ```
 <img src="{{ site.url }}{{ site.baseurl }}/images/mongoDB/7.jpg" alt="linearly separable data">
 
-Selecting documents with "OR" operators, all values with Mary as first name OR anyperson with a master qualification.
+Selecting all documents with Mary as first name OR anype rson with a master qualification.
 
 ```python
 # OR operators 
@@ -172,9 +172,9 @@ for item in information.find({'$or':[{'firstname':'Mary'},{'qualification':'mast
 <img src="{{ site.url }}{{ site.baseurl }}/images/mongoDB/8.jpg" alt="linearly separable data">
 
 
-### Transforming the collection into a Pandas Data Frame
+### Transforming the collection into a Pandas DataFrame
 
-Depending on the situation you would prefer to work usinf a Pandas Data Frame.\
+Depending on the situation you would prefer to work using a Pandas DataFrame.\
 Check how simple the conversion is.
 
 ```python
