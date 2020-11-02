@@ -6,12 +6,12 @@ header:
   image: "/images/mongoDB/mongo_DB.jpeg"
 excerpt: "Data Cleaning, Machine Learning, Data Science"
 ---
-####### **Image Credits** Smith Collection / Gado / Getty Images
+**Image Credits** Smith Collection / Gado / Getty Images
 
 
 ### MongoDB
 
-MondoDB is a righly scalable database. All info is stored as JSON files, whitch makes it very fast and scalable.
+MongoDB is a righly scalable database. All info is stored as JSON files, whitch makes it very fast and scalable.
 
 ### Terminology
 * Collection - name used for tables
@@ -114,5 +114,73 @@ information.insert_many(record)
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/mongoDB/3.jpg" alt="linearly separable data">
 
+### Querying the collection
 
+Next you will see how to perform a "SELECT *" and retrive all the info in our collection.\
+They info generated is a "cursor.Cursor" format that will require a loop do visualize it.
+
+```python
+
+#select * from the collection == table employeeinformation
+information.find()
+
+for item in information.find():
+    print(item)
+
+```
+<img src="{{ site.url }}{{ site.baseurl }}/images/mongoDB/4.jpg" alt="linearly separable data">
+
+#### Seraching for one or /and more specific records
+
+Selecting a specific name.
+
+```python
+#select * from employeeinformation where firstname = Mary
+
+for item in information.find({'firstname':'Mary'}):
+    print(item)
+```
+<img src="{{ site.url }}{{ site.baseurl }}/images/mongoDB/5.jpg" alt="linearly separable data">
+
+
+Selecting all documents that have marters or PhD as a qualification.
+
+```python
+#query documents using operators ($in, $Lt, $gt)
+for item in information.find({'qualification':{'$in':['phd','master']}}):
+    print(item)
+```
+<img src="{{ site.url }}{{ site.baseurl }}/images/mongoDB/6.jpg" alt="linearly separable data">
+
+
+Selecting all documents with master qualification and age under 35.
+
+```python
+for item in information.find({'qualification':'master','age':{'$lt':35}}):
+    print(item)
+```
+<img src="{{ site.url }}{{ site.baseurl }}/images/mongoDB/7.jpg" alt="linearly separable data">
+
+Selecting documents with "OR" operators, all values with Mary as first name OR anyperson with a master qualification.
+
+```python
+# OR operators 
+for item in information.find({'$or':[{'firstname':'Mary'},{'qualification':'master'}]}):
+    print(item)
+```
+
+<img src="{{ site.url }}{{ site.baseurl }}/images/mongoDB/8.jpg" alt="linearly separable data">
+
+
+### Transforming the collection into a Pandas Data Frame
+
+Depending on the situation you would prefer to work usinf a Pandas Data Frame.\
+Check how simple the conversion is.
+
+```python
+df = pd.DataFrame(list(information.find()))
+df
+```
+
+<img src="{{ site.url }}{{ site.baseurl }}/images/mongoDB/9.jpg" alt="linearly separable data">
 
