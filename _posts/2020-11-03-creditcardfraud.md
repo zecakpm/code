@@ -14,9 +14,9 @@ On this article, I will explore a dataset from credit card transactions and run 
 
 I will go through some technical topics as Principal Component Analysis and Confusion Matrix.
 
-This an unbalanced dataset with the majority of the records being regular transactions, 284,807, and 492 fraudulent transactions. 
+This is an unbalanced dataset with the majority of the records being regular transactions, 284,807, and 492 fraudulent transactions. 
 
-Only numeric values are present on this dataset, this is due to PCA transformation, to preserve data confidentiality, ran but the data provider. 
+Only numeric values are present on this dataset, this is due to PCA transformation, to preserve data confidentiality, ran by the data provider. 
 
 * PCA: one of the most important part of this technique is dimensionality reduction and variance preservation. A practical aspect is that with lower number of columns for example resulting in similar accurate results.  
 
