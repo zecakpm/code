@@ -3,7 +3,7 @@ title: "Detecting credit card fraudulent transactions with 99% accuracy"
 date: 2020-11-03
 tags: [pca, logistic regression, machine learning, data science]
 header:
-  image: "/images/credit_card_fraud/credit_card.jpg"
+  image: "/images/credit_card_fraud/cc.jpg"
 excerpt: “Fraud Detection, Machine Learning, Data Science"
 ---
 
