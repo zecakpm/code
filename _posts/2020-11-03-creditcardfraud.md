@@ -12,7 +12,7 @@ On this article, I will explore a dataset from credit card transactions and run 
 
 * Find here the data → [CSV file](https://www.kaggle.com/mlg-ulb/creditcardfraud)
 
-I will go through some technical topics as Principal Component Analysis and Confusion Matrix.
+I will also cover some technical topics as Principal Component Analysis and Confusion Matrix.
 
 This is an unbalanced dataset with the majority of the records being regular transactions, 284,807, and 492 fraudulent transactions. 
 
