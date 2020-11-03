@@ -54,8 +54,7 @@ data.head()
 
 ### Splitting data 
 Features: selecting all the columns excluding “Class”
-Target: Selecting “Class” column, the variable we are aiming to predict
-Using a ratio of 35/65 (test/training) 
+Target: Selecting “Class” column, the variable we are aiming to predict using a ratio of 35/65 (test/training) 
 
 ```python
 features = data.iloc[:,:-1]
