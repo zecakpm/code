@@ -1,5 +1,5 @@
 ---
-title: "MongoDB - Creating, querying and transformig data with Python"
+title: "MongoDB - Creating, querying and transforming data with Python"
 date: 2020-10-25
 tags: [Mongo DB, Python, Cloud, Data Wrangling]
 header:
@@ -9,20 +9,23 @@ excerpt: "Data Cleaning, Machine Learning, Data Science"
 **Image Credits** Smith Collection / Gado / Getty Images
 
 
+**Image Credits** Smith Collection / Gado / Getty Images
+
+
 ### MongoDB
 
-MongoDB is a righly scalable database. All info is stored as JSON files, whitch makes it very fast and scalable.
+MongoDB is a highly scalable database. All info is stored as JSON files, which makes it very fast and scalable.
 
 ### Terminology
 * Collection - name used for tables
 
 ### Objective
 
-I will be exploring how to create, query and transform data into a Pandas DataFrame in Python.
+I will be exploring how to create, query, and transform data into a Pandas DataFrame in Python.
 
-With no further delays, lets get our hands dirt.
+With no further delays, let's get our hands dirty.
 
-### Importing libraries and establish connection with Mongo Server
+### Importing libraries and establish a connection with Mongo Server
 
 ```python
 from flask_pymongo import pymongo as pm
@@ -32,8 +35,8 @@ from pymongo import MongoClient as mc
 connection = mc('localhost',27017)
 ```
 
-### Creating a data base
-If a database does not exist under this name, a new data base will be created.
+### Creating a database
+If a database does not exist under this name, a new database will be created.
 
 ```python
 #createing a database
@@ -53,8 +56,8 @@ information = mydb.employeeinformation
 
 
 ### Adding records
-All the recors must follow the JSON key pair format.
-Lets check how to insert one or more records.
+All the records must follow the JSON key pair format.
+Let’s check how to insert one or more records.
 
 ```python
 #one record
@@ -116,8 +119,8 @@ information.insert_many(record)
 
 ### Querying the collection
 
-Next you will see how to perform a "SELECT *" and retrive all the info in our collection.\
-The info generated is a "cursor.Cursor" format that will require a loop do visualize it.
+Next, you will see how to perform a "SELECT *" and retrieve all the info in our collection.\
+The info generated is a "cursor.Cursor" format that will require a loop to visualize it.
 
 ```python
 
@@ -143,7 +146,7 @@ for item in information.find({'firstname':'Mary'}):
 <img src="{{ site.url }}{{ site.baseurl }}/images/mongoDB/5.jpg" alt="linearly separable data">
 
 
-Selecting all documents that have marters or PhD as a qualification.
+Selecting all documents that have a master’s or a Ph.D. as a qualification.
 
 ```python
 #query documents using operators ($in, $Lt, $gt)
@@ -183,4 +186,3 @@ df
 ```
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/mongoDB/9.jpg" alt="linearly separable data">
-
