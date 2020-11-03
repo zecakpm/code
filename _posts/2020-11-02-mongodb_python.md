@@ -117,7 +117,7 @@ information.insert_many(record)
 ### Querying the collection
 
 Next you will see how to perform a "SELECT *" and retrive all the info in our collection.\
-They info generated is a "cursor.Cursor" format that will require a loop do visualize it.
+The info generated is a "cursor.Cursor" format that will require a loop do visualize it.
 
 ```python
 
@@ -161,7 +161,7 @@ for item in information.find({'qualification':'master','age':{'$lt':35}}):
 ```
 <img src="{{ site.url }}{{ site.baseurl }}/images/mongoDB/7.jpg" alt="linearly separable data">
 
-Selecting all documents with Mary as first name OR anype rson with a master qualification.
+Selecting all documents with Mary as first name OR any person with a master qualification.
 
 ```python
 # OR operators 

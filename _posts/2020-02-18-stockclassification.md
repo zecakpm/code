@@ -7,24 +7,24 @@ header:
 excerpt: "Machine Learning,Stock, Data Science"
 ---
 
-# STOCK MARKET
+### STOCK MARKET
 
 Stock market prediction is a challenge for investors and advisers.
-The analysis of longer time series can be achieved using APIs and classification models allowing investors to use a wide range 
+The analysis of time series throught APIs and classification models allow investors to use a wide range 
 of information that could lead to better asset allocation. 
 
-# Model
+### Model
 
    To reduce risk exposure we propose a short period classification using the Random Forest model.
 
-# Structure
+### Structure
 
-## Choose Markets & Companies
+### Choose Markets & Companies
 
-   Select major companies from NYSE, Nasdaq, and LSE.
-## Collect data
+   Selected major companies from NYSE, Nasdaq, and LSE.
+### Collect data
 
-   Use yahoo API to gather company data.
+   Used yahoo API to gather company data.
 
 
 ```r
@@ -54,7 +54,7 @@ resultDataSet <- data.frame(stocks=character(), Accuracy=double())
 print(resultDataSet)
 ``` 
 
-## Calculate indicators
+### Indicators
 
    * RSI indicator
    * Exponential Moving Average Indicator
@@ -116,7 +116,7 @@ for(st in stocks){
     d3=dataset1
 ```
 
-## Split data
+### Training and Test data
 
    Split data ratio, 80% for training and 20% to validate the model.
 
@@ -140,7 +140,7 @@ for(st in stocks){
     
 ```
 
-## Implement the model
+### Implement the model
 
 
 ```r
@@ -153,7 +153,7 @@ for(st in stocks){
     predict_val = predict(classifier, newdata = test_set[-5])
 ```
 
-## Calculate accuracy
+### Calculate accuracy
 
 ```r
 # Confusion Matrix
@@ -169,8 +169,8 @@ for(st in stocks){
     
 ```
 
-# Findings
-   This represents that the model was able to predict the market direction on 63% of the cases. The result makes it an extra tool for trade strategies.
+### Findings
+   Results show that the model was able to predict the market direction on 63% of the cases. One more tool for trade decision making.
  
 
 

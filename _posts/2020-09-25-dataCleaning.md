@@ -10,13 +10,8 @@ excerpt: "Data Cleaning, Machine Learning, Data Science"
 
 
 ## Clean web log access 
-Main aim of this task is to view the top pages of a certain web page.
-How a easy task turns into a laborious activy. 
+Main aim of this task is to view the top pages of a certain web page, and understand how a easy task can turn into a laborious activy. 
 This log data was released on the Udemy Course called "Machine Learning, Data Science and Deep Learning with Python" by Frank Keane.
-
-To download the data check out this link.
-
-
 
 Lets start!!!
 
@@ -189,7 +184,7 @@ for result in results:
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/data_cleaning/5.jpg" alt="linearly separable data">
 
-There still agents that do not look right, so lets add few more filters. Lets remove agents that have the following
+There still agents that do not look right, so lets add few more filters. Lets remove agents that have the following words
 bots,Bots,spider,Spider, and "-".  
 
 ``` python
