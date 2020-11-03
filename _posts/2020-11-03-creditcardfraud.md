@@ -28,7 +28,7 @@ The scatter plot shows us the distribution (time x amount)
 * 0 - regular transactions
 * 1 -  fraudulent transactions
 
-You need to looke closely to find an orange dot.
+You need to look closely to find an orange dot, there are not many of them compared with the blue transactions.
 
 Now let’s explore the code. Simple and Accurate ; )
 
