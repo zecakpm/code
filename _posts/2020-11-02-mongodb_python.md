@@ -8,10 +8,6 @@ excerpt: "Data Cleaning, Machine Learning, Data Science"
 ---
 **Image Credits** Smith Collection / Gado / Getty Images
 
-
-**Image Credits** Smith Collection / Gado / Getty Images
-
-
 ### MongoDB
 
 MongoDB is a highly scalable database. All info is stored as JSON files, which makes it very fast and scalable.
