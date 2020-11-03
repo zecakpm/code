@@ -10,7 +10,7 @@ excerpt: "Machine Learning,Stock, Data Science"
 ### STOCK MARKET
 
 Stock market prediction is a challenge for investors and advisers.
-The analysis of time series throught APIs and classification models allow investors to use a wide range 
+The analysis of time series using  APIs + classification models allow investors to use a wide range 
 of information that could lead to better asset allocation. 
 
 ### Model
@@ -170,7 +170,7 @@ for(st in stocks){
 ```
 
 ### Findings
-   Results show that the model was able to predict the market direction on 63% of the cases. One more tool for trade decision making.
+   Results show that the model was able to predict the market direction in 63% of the cases. One more tool for trade decision making.
  
 
 
