@@ -9,17 +9,17 @@ excerpt: "Data Cleaning, Machine Learning, Data Science"
 
 
 
-## Clean web log access 
-Main aim of this task is to view the top pages of a certain web page, and understand how a easy task can turn into a laborious activy. 
+### Clean weblog access 
+The main aim of this task is to view the top pages of a certain web page and understand how an easy task can turn into a laborious activity. 
 This log data was released on the Udemy Course called "Machine Learning, Data Science and Deep Learning with Python" by Frank Keane.
 
-Lets start!!!
+Let’s start!!!
 
 
-## Organizing web logs into fields
+### Organizing weblogs into fields
 
-This code will parse an apache access log line in a bunch of fields, and then buids up what is called the regular expression.
-This will allows us to appy it to each access log line, and group the pieces of data in these different fields
+This code will parse an apache access logline in a bunch of fields and then builds up what is called the regular expression.
+This will allow us to apply it to each access logline, and group the pieces of data in these different fields
 
 ``` python
 import re
@@ -40,8 +40,8 @@ df = "access_log.txt"
 
 ```
 
-## Code step by step
-* Create a dictionaty
+### Code step by step
+* Create a dictionary
 * For each line apply the regular expression
 * If statement meets a standard pattern (3 components --> action,URL, protocol)
 * Extract a request field
@@ -74,8 +74,8 @@ for result in results[:20]:
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/data_cleaning/1.jpg" alt="linearly separable data">
 
-Our first road block is that not all fields have the 3 components that we are looking for.
-So lets check which rows does not have 3 components.
+Our first roadblock is that not all fields have the 3 components that we are looking for.
+So let’s check which rows do not have 3 components.
 
 ``` python
 URLCounts = {}
@@ -94,7 +94,7 @@ with open(data, "r") as f:
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/data_cleaning/2.jpg" alt="linearly separable data">
 
-Lets update our code to select only fields with 3 components.
+Let’s update our code to select only fields with 3 components.
 
 ``` python
 URLCounts = {}
@@ -124,7 +124,7 @@ for result in results[:20]:
 <img src="{{ site.url }}{{ site.baseurl }}/images/data_cleaning/3.jpg" alt="linearly separable data">
 
 The results were narrowed down, but we are not quite there yet.
-To restrict it a bit more lets set action = "GET".
+To restrict it a bit more let’s set action = "GET".
 This means that users "getting" info from the website.
 
 ``` python
@@ -153,7 +153,7 @@ for result in results[:20]:
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/data_cleaning/4.jpg" alt="linearly separable data">
 
-Digging deeper on the results is possible to find "blank" user agents, meaning that those requests are coming from 
+Digging deeper into the results is possible to find "blank" user agents, meaning that those requests are coming from 
 not regular users, or any type of web scrappers.
 
 * selecting most used agent ="browser"
@@ -184,7 +184,7 @@ for result in results:
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/data_cleaning/5.jpg" alt="linearly separable data">
 
-There still agents that do not look right, so lets add few more filters. Lets remove agents that have the following words
+There still agents that do not look right, so let’s add few more filters. Let’s remove agents that have the following words
 bots,Bots,spider,Spider, and "-".  
 
 ``` python
@@ -221,7 +221,7 @@ for result in results[:20]:
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/data_cleaning/6.jpg" alt="linearly separable data">
 
-Almost there, finally the last approach. So the next action is to filter only for URLs endind in "/".
+Almost there, finally the last approach. So the next action is to filter only for URLs ending in "/".
 
 ``` python
 URLCounts = {}
@@ -254,7 +254,3 @@ for result in results[:20]:
 ```
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/data_cleaning/7.jpg" alt="linearly separable data">
-
-
-
-
