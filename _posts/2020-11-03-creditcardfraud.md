@@ -10,8 +10,6 @@ excerpt: “Fraud Detection, Machine Learning, Data Science"
 
 On this article, I will explore a dataset from credit card transactions and run a regression classifier to predict fraudulent ones. 
 
-* Find here the data → [CSV file](https://www.kaggle.com/mlg-ulb/creditcardfraud)
-
 I will also cover some technical topics as Principal Component Analysis and Confusion Matrix.
 
 This is an unbalanced dataset with the majority of the records being regular transactions, 284,807, and 492 fraudulent transactions. 
@@ -45,6 +43,8 @@ from sklearn.metrics import confusion_matrix, classification_report, accuracy_sc
 
 ### Importing file 
 Importing CSV file and evaluating top 5 rows.
+
+* Find here the data → [CSV file](https://www.kaggle.com/mlg-ulb/creditcardfraud)
 
 ```python
 data = pd.read_csv("/Users/joseformiga/Desktop/Python/credit_card_fraud_detection/creditcard.csv")

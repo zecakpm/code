@@ -4,7 +4,7 @@ date: 2020-02-18
 tags: [machine learning, data science, neural network]
 header:
   image: "/images/stock_classification/stock_market.jpg"
-excerpt: "Machine Learning,Stock, Data Science"
+excerpt: "Stock, Machine Learning, , Data Science"
 ---
 
 ### STOCK MARKET
