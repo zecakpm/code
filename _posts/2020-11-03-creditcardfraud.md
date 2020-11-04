@@ -97,12 +97,15 @@ In our example we have:
 
 Here are our results.
 * Confusion matrix
+
 <img src="{{ site.url }}{{ site.baseurl }}/images/credit_card_fraud/2.jpg" alt="linearly separable data">
 
 * Accuracy
+
 <img src="{{ site.url }}{{ site.baseurl }}/images/credit_card_fraud/3.jpg" alt="linearly separable data">
 
 * Classification report
+
 <img src="{{ site.url }}{{ site.baseurl }}/images/credit_card_fraud/4.jpg" alt="linearly separable data">
 
 The accuracy is impressive 99,9% !!! But is important to have in mind that we should explore further the results for Precision and Recall (topics for a whole new article =D).
